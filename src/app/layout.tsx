@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Jitendra Portfolio",
   description: "Jitendra Choudhary Portfolio",
+  icons:{
+    icon:'/logo.png'
+  }
 };
 
 export default function RootLayout({
