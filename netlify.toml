@@ -2,5 +2,8 @@
   command = "npm run build"
   publish = "out"
 
-[plugins."@netlify/plugin-nextjs"]
-  inputs.skip = true
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+  [plugins.inputs]
+  skip = true
