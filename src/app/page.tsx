@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -23,7 +24,9 @@ export default function Home() {
         <div className="pt-12 md:pt-20 flex flex-col gap-8">
           <HeroSection />
           <About />
-          <WorkSection />
+          <Suspense fallback={<div>Loading work section...</div>}>
+            <WorkSection />
+          </Suspense>
           <Footer />
         </div>
       </div>

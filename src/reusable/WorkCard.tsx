@@ -54,9 +54,7 @@ const openModal = () => {
   router.push(`?project=${encodeURIComponent(projectName)}`, { scroll: false });
 };
 
-const closeModal = () => {
-  router.back(); // this will go back to the previous route
-};
+
 
   const toggleFlip = () => {
     if (window.innerWidth < 768) {
