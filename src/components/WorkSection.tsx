@@ -35,6 +35,7 @@ import {
 import { SiHtml5, SiCss3, SiVercel, SiFramer } from "react-icons/si";
 import { FaLink, FaRoute } from "react-icons/fa"; // for "deep linking" and "routes"
 import TextBuilder from "@/reusable/TextBuilder";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const works = [
   {
@@ -207,7 +208,7 @@ const works = [
 
     description:
       "Redesigned and rebuilt the entire Service Hive website with a modern UI, dynamic service pages (14+), scroll-based animations, call scheduling, timely popups, and a fully responsive theme. Implemented dynamic routing using Next.js, integrated Framer Motion for smooth transitions, and optimized SEO to achieve a 100/100 score on Lighthouse audits. The project was deployed on Hostinger.",
-    iframeSrc: "https://www.servicehive.com",
+    iframeSrc: "https://www.servicehive.tech",
     fallbackImageSrc: "/servicehive_website.png",
 
     overview:
@@ -353,27 +354,26 @@ const works = [
 ];
 
 const WorkSection = () => {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const currentProject = searchParams.get("project");
+
+  const closeModal = () => {
+    router.push("/#work", { scroll: false });
+  };
+
   return (
-    <section id="work" className="w-full  flex flex-col items-center">
+    <section id="work" className="w-full flex flex-col items-center">
       <TextBuilder text="Work" isMain={true} className="text-[30px] mb-6" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
         {works.map((work, idx) => (
           <div key={idx} className="h-full">
             <WorkCard
-              companyName={work.companyName}
-              companyLogo={work.companyLogo}
-              projectName={work.projectName}
-              description={work.description}
-              techStack={work.techStack}
-              iframeSrc={work.iframeSrc}
-              overview={work.overview}
-              objectivePoints={work.objectivePoints}
-              challenges={work.challenges}
-              issuesSolved={work.issuesSolved}
-              learnings={work.learnings}
-              fallbackImageSrc={work.fallbackImageSrc}
-              fallbackImageSrcMobile={work.fallbackImageSrcMobile}
+              {...work}
+              isModalOpen={currentProject === work.projectName}
+              onClose={closeModal}
             />
           </div>
         ))}

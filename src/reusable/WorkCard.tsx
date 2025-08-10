@@ -3,10 +3,14 @@ import React, { useState } from "react";
 import TextBuilder from "./TextBuilder";
 import { IoClose } from "react-icons/io5";
 import ProjectModal from "@/components/ProjectModal";
+import { useRouter } from "next/navigation";
 
 interface WorkCardProps {
   companyName: string;
   companyLogo: string;
+    isModalOpen: boolean;
+  onClose: () => void;
+
   projectName: string;
   description: string;
   techStack: TechItem[];
@@ -38,11 +42,21 @@ const WorkCard: React.FC<WorkCardProps> = ({
   objectivePoints,
   issuesSolved,
   learnings,
+  isModalOpen,
+  onClose,
   challenges,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
+const router = useRouter();
+
+const openModal = () => {
+  router.push(`?project=${encodeURIComponent(projectName)}`, { scroll: false });
+};
+
+const closeModal = () => {
+  router.back(); // this will go back to the previous route
+};
 
   const toggleFlip = () => {
     if (window.innerWidth < 768) {
@@ -110,22 +124,23 @@ const WorkCard: React.FC<WorkCardProps> = ({
 
           {/* Back */}
           <div className="absolute top-0 left-0 w-full h-full [transform:rotateY(180deg)] backface-hidden bg-[var(--elevation-two)] border border-[var(--elevation-four)] rounded-[8px] flex items-center justify-center">
-            <button
-              className="cursor-pointer px-6 py-2 text-sm font-semibold text-[var(--text-primary)] bg-[var(--accent-opacity)] rounded hover:scale-105 transition-transform"
-              onClick={(e) => {
-                e.stopPropagation(); // prevent card flip
-                setIsModalOpen(true);
-              }}
-            >
-              View Project
-            </button>
+           <button
+  className="cursor-pointer px-6 py-2 text-sm font-semibold text-[var(--text-primary)] bg-[var(--accent-opacity)] rounded hover:scale-105 transition-transform"
+  onClick={(e) => {
+    e.stopPropagation();
+    openModal();
+  }}
+>
+  View Project
+</button>
+
           </div>
         </div>
       </div>
 
       <ProjectModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        onClose={ onClose}
         iframeSrc={iframeSrc}
         projectName={projectName}
         overview={overview}
