@@ -22,9 +22,9 @@ const About = () => {
           <div className="w-full  lg:w-1/2">
             <TextBuilder
               className="text-[18px] text-justify"
-              text="Hey there, I’m Jitendra! 👋🙂 I’m a 21-year-old full-stack developer currently in my 3rd year of B.Tech 🎓. I’ve been building and shipping production-grade mobile apps 📱, web platforms 💻, and admin tools 🛠️ since early in my degree — blending clean architecture 🧱, performance optimization ⚡, and great UX 🎨 into every product. I’ve worked across the stack with Flutter, Next.js, Redux, Firebase, and deeply integrated systems like UPI 💸, deep linking 🔗, real-time analytics 📊, and secure authentication 🔐. I'm also learning about AI 🧠 and model development, and I love exploring architectural patterns like SOLID 🧩 and layered design 🏗️. 
+              text="Hey there, I’m Jitendra. I’m a 21-year-old full-stack developer in my 3rd year of B.Tech. I have experience building production-ready mobile apps, web platforms, and admin tools with a focus on clean architecture, performance, and user experience. My work spans across Flutter, Next.js, Redux, Firebase, and integrations such as UPI, deep linking, real-time analytics, and secure authentication.
 
-Outside of tech, I’m into football ⚽, geopolitics 🌍, and late-night rabbit holes 🕳️ on system design and world affairs. Always building, always learning — one repo at a time 🧑‍💻🚀."
+I’m also exploring AI, model development, and software design principles like SOLID and layered architecture. Outside of tech, I’m interested in football, geopolitics, and system design."
             />
           </div>
         </div>
