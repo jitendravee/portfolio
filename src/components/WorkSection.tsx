@@ -103,7 +103,128 @@ const works = [
     { name: "Play Store", icon: <SiGoogleplay /> },
     { name: "App Store", icon: <SiAppstore /> },
   ],
-},
+},   {
+    companyName: "Saharsh Cabins",
+    companyLogo: "https://www.saharsh.co/assets/logo/logo.svg",
+    projectName: "Lead Automation — Sheets & Gmail",
+    description:
+      "Built a serverless lead automation system embedded in the Saharsh Cabins contact form. On every submission, a Next.js API route appends a new row to a Google Sheet (acting as a lightweight CRM) and fires two emails via Nodemailer/Gmail SMTP — a branded confirmation to the user and an instant lead-alert to the sales team. Zero third-party services. Fully self-hosted and cost-free.",
+ 
+    iframeSrc: "https://www.saharsh.co/#contact-us",
+    fallbackImageSrc: "",
+    fallbackImageSrcMobile: "",
+ 
+    overview:
+      "A lightweight but production-grade lead automation pipeline built as a Next.js API route for Saharsh Cabins. When a visitor submits the 'Get in Touch' form (name, phone, budget, interest), the system simultaneously: (1) appends a structured row to a Google Sheet used by the sales team as a live CRM, and (2) sends two emails via Gmail SMTP — a personalised confirmation to the user and a real-time lead alert to the admin. No Zapier, no Make, no third-party service — fully self-contained.",
+ 
+    objectivePoints: [
+      "Capture every lead from the website contact form into a structured Google Sheet automatically.",
+      "Instantly notify the Saharsh sales team with full lead details via Gmail.",
+      "Send a personalised confirmation email to the user to build trust and reduce drop-off.",
+      "Keep the solution cost-free and self-contained — no paid automation tools.",
+      "Handle errors gracefully so a failed email never blocks the Google Sheet write.",
+    ],
+ 
+    techStack: [
+      { name: "Next.js API Routes", icon: <SiNextdotjs /> },
+      { name: "Google Sheets API", icon: <FaDatabase /> },
+      { name: "Google Auth (Service Account)", icon: <FaUnlockAlt /> },
+      { name: "Nodemailer", icon: <FaServer /> },
+      { name: "Gmail SMTP", icon: <FaNetworkWired /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "Vercel (Serverless)", icon: <SiVercel /> },
+    ],
+ 
+    challenges: [
+      "Authenticating with the Google Sheets API using a service account JSON key without exposing credentials — managed via environment variables and Vercel's secret injection.",
+      "Running two async operations (Sheets append + two emails) in parallel without one failure blocking the other.",
+      "Designing HTML email templates that render correctly in Gmail, Outlook, and Apple Mail — all with inline CSS.",
+      "Rate-limiting the API route to prevent spam submissions from flooding the sheet and inbox.",
+      "Keeping Vercel serverless function cold-start time low despite loading googleapis and nodemailer.",
+    ],
+ 
+    issuesSolved: [
+      "Used Google's service account with a scoped JWT auth client — credentials stored as a base64-encoded environment variable, decoded at runtime. No key file ever committed to git.",
+      "Wrapped Sheets append and email sends in Promise.allSettled() — both run in parallel and a failed email never causes the Sheets write to roll back.",
+      "Built plain-text + HTML multipart email templates with inline styles — tested across Gmail, Outlook, and Apple Mail for consistent rendering.",
+      "Added a server-side honeypot field check and a 1-second debounce on the submit button to block basic spam.",
+      "Lazy-initialised googleapis and nodemailer clients outside the handler function to reuse across warm invocations and cut cold-start overhead.",
+    ],
+ 
+    learnings: [
+      "Mastered Google Sheets API v4 — appending rows, authenticating with a service account, and handling quota errors.",
+      "Learned the full Nodemailer SMTP flow — app passwords, transport config, HTML/text multipart emails, and error handling.",
+      "Understood how to safely inject secrets into Vercel serverless functions without ever touching the filesystem.",
+      "Gained experience designing resilient multi-step async pipelines using Promise.allSettled() for graceful partial failures.",
+      "Learned how to build a zero-cost, self-hosted lead pipeline that replaces paid tools like Zapier for simple automation needs.",
+    ],
+  },
+  {
+    companyName: "Saharsh Cabins",
+    companyLogo: "https://www.saharsh.co/assets/logo/logo.svg", // add their logo SVG/PNG to /public
+    projectName: "Saharsh Cabins Website",
+    description:
+      "Designed and developed the official website for Saharsh Cabins — a luxury prefab cabin brand with 15 years of industry experience. Built with Next.js, Framer Motion, and TailwindCSS, the site features an animated product comparison section, interactive category slider, product catalogue (Hutsie, Rustico, Barnie, Skylighter, Triango), FAQ accordion, and a contact form wired to Google Sheets and Gmail automation. Achieved a 100/100 Lighthouse SEO score.",
+ 
+    iframeSrc: "https://www.saharsh.co/",
+    fallbackImageSrc: "",
+    fallbackImageSrcMobile: "",
+ 
+    overview:
+      "saharsh.co is the marketing and lead-generation website for Saharsh Cabins, a luxury prefab cabin manufacturer operating across India with four production facilities. The site serves resort owners, farmhouse builders, and commercial clients exploring modular construction. It showcases product categories (luxury cottages, villas, cafes, sales offices), walks visitors through the 4-step process, presents the Saharsh vs. Traditional construction comparison, and captures qualified leads via an integrated contact form.",
+ 
+    objectivePoints: [
+      "Showcase 5 bestselling cabin models with rich imagery and category filtering.",
+      "Present a side-by-side Saharsh vs. Traditional construction comparison to drive conversion.",
+      "Capture and qualify leads via a contact form (budget, interest) with backend automation.",
+      "Auto-fill Google Sheets with every form submission for the sales team.",
+      "Trigger confirmation emails to both the user and the admin on every lead.",
+      "Achieve high Lighthouse scores for SEO and performance despite image-heavy content.",
+    ],
+ 
+    techStack: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "React", icon: <SiReact /> },
+      { name: "TailwindCSS", icon: <SiTailwindcss /> },
+      { name: "Framer Motion", icon: <SiFramer /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "HTML", icon: <SiHtml5 /> },
+      { name: "CSS", icon: <SiCss3 /> },
+      { name: "Google Sheets API", icon: <FaDatabase /> },
+      { name: "Gmail (Nodemailer)", icon: <FaServer /> },
+      { name: "SEO Optimization", icon: <FaSearch /> },
+      { name: "Dynamic Routing", icon: <FaRoute /> },
+      { name: "Vercel", icon: <SiVercel /> },
+    ],
+ 
+    challenges: [
+      "Building an animated side-by-side comparison section that feels premium and renders at 60fps on mobile.",
+      "Wiring the contact form to simultaneously write to Google Sheets and send dual emails (user + admin) without a third-party service.",
+      "Optimising a very image-heavy site (full-bleed cabin photography) to still achieve top Lighthouse scores.",
+      "Implementing an auto-scrolling product category slider with touch support and no layout shift.",
+      "Building the FAQ accordion with smooth height animations without using a library.",
+      "Handling form state, validation, and submission feedback in a single seamless UX flow.",
+    ],
+ 
+    issuesSolved: [
+      "Integrated Google Sheets API via a Next.js API route — form data is appended as a new row on every submission with timestamp, name, budget, and interest fields.",
+      "Used Nodemailer with a Gmail SMTP app password to fire two emails on submission: a confirmation to the user and a lead-alert to the sales team.",
+      "Applied next/image with priority loading and responsive sizes for all above-the-fold cabin images, keeping LCP under 2s.",
+      "Used CSS scroll-snap for the category slider — zero JS dependency, buttery smooth on mobile.",
+      "Built the FAQ accordion with CSS max-height transition and overflow hidden — no layout jank, no library.",
+      "Added form validation with inline error states and a success screen post-submit to prevent double submissions.",
+    ],
+ 
+    learnings: [
+      "Learned to integrate Google Sheets as a lightweight CRM via the Sheets API and service account credentials.",
+      "Understood the SMTP flow with Nodemailer — setting up app passwords, email templates, and error handling for both sender addresses.",
+      "Improved mastery of Framer Motion for scroll-triggered section reveals on a marketing site.",
+      "Gained experience building a conversion-focused landing page for a B2B luxury brand — balancing aesthetics with lead-gen goals.",
+      "Learned how to structure a Next.js API route that handles multiple async side effects (DB write + two emails) with proper error boundaries.",
+    ],
+  },
+ 
 
 {
   companyName: "Twigg",
