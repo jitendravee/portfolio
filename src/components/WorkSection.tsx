@@ -39,6 +39,136 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 const works = [
   {
+  companyName: "Twigg",
+  companyLogo: "https://twigg.one/logo.svg",
+  projectName: "Twigg App",
+  description:
+    "Built the cross-platform Twigg mobile app using Flutter and Bloc — a personal finance platform that consolidates bank accounts, investments, loans, and insurance in one place via RBI's Account Aggregator framework. Integrated Twigg Pulse (15+ financial health signals), Twigg AI (context-aware financial co-pilot), Twigg Sense (financial fact-checker), and consent-based read-only account linking. Published to both App Store and Play Store in beta.",
+
+  iframeSrc:
+    "https://play.google.com/store/apps/details?id=com.aadyantx.twigg",
+  fallbackImageSrc: "https://twigg.one/_next/image?url=%2Fhero%2Fmobile_3.png&w=384&q=75",
+  fallbackImageSrcMobile: "https://twigg.one/_next/image?url=%2Fhero%2Fmobile_3.png&w=384&q=75",
+
+  overview:
+    "Twigg is an AI-powered personal finance app built for salaried professionals, early investors, and first-gen wealth builders. It links all financial accounts via RBI's Account Aggregator (consent-based, read-only), analyses 15+ financial health signals via Twigg Pulse, lets users fact-check financial claims via Twigg Sense, and provides personalised guidance through Twigg AI — all in one clean, secure platform. Available in beta on App Store and Play Store.",
+
+  objectivePoints: [
+    "Consolidate bank accounts, investments, loans, and insurance in one place.",
+    "Integrate RBI Account Aggregator and credit bureau for secure, consent-based data linking.",
+    "Deliver 15+ financial health signals across protection, cashflow, credit, investments, and safety.",
+    "Provide AI-powered, context-aware financial guidance grounded in the user's actual data.",
+    "Enable financial claim fact-checking via Twigg Sense for reels, tweets, and tips.",
+  ],
+
+  challenges: [
+    "Integrating RBI Account Aggregator consent flow — a multi-step, regulated process requiring precise handling of consent tokens, redirect states, and data fetch triggers.",
+    "Building Twigg Pulse: aggregating and scoring 15+ financial signals across diverse data sources (banks, mutual funds, insurance, loans) into a unified health view.",
+    "Implementing Twigg Sense — a fact-checking feature that cross-references financial claims against the user's real portfolio data for personalised relevance.",
+    "Managing deeply nested, async financial data streams from multiple institutions with varying API response schemas.",
+    "Maintaining read-only, zero-data-storage compliance across all linked account flows per RBI AA regulations.",
+    "Designing a clean, anxiety-free UI for a domain (personal finance) that most users find intimidating.",
+    "Handling cross-platform nuances in deep linking, OTP authentication, and session persistence between iOS and Android.",
+  ],
+
+  issuesSolved: [
+    "Built a modular consent-flow handler that gracefully manages AA token lifecycle, redirects, and failure states.",
+    "Designed a signal-scoring engine that maps raw financial data to actionable Pulse insights using clean domain logic.",
+    "Used Bloc at root level for shared state across financial dashboards, ensuring consistent data without redundant API calls.",
+    "Implemented lazy loading and pagination for large financial data sets to maintain smooth performance.",
+    "Resolved cross-platform deep link issues by configuring assetlinks.json (Android) and universal links (iOS) for seamless app-open flows.",
+  ],
+
+  learnings: [
+    "Gained deep understanding of RBI Account Aggregator architecture and consent-based financial data flows.",
+    "Mastered Bloc pattern for complex, multi-domain state management at scale.",
+    "Learned to design for regulated, compliance-sensitive fintech environments.",
+    "Improved skills in handling heterogeneous API schemas from multiple financial institutions.",
+    "Strengthened cross-platform deployment experience across App Store and Play Store.",
+    "Understood how to translate complex financial concepts into simple, actionable mobile UX.",
+  ],
+
+  techStack: [
+    { name: "Flutter", icon: <SiFlutter /> },
+    { name: "Dart", icon: <SiDart /> },
+    { name: "Bloc (State Management)", icon: <FaCodeBranch /> },
+    { name: "Firebase", icon: <SiFirebase /> },
+    { name: "GoRouter (Navigation)", icon: <FaRoute /> },
+    { name: "Deep Linking", icon: <FaLink /> },
+    { name: "RBI Account Aggregator", icon: <FaDatabase /> },
+    { name: "OTP Authentication", icon: <FaUnlockAlt /> },
+    { name: "REST API / Dio", icon: <FaNetworkWired /> },
+    { name: "Analytics", icon: <FaChartLine /> },
+    { name: "Push Notifications", icon: <FaBell /> },
+    { name: "Play Store", icon: <SiGoogleplay /> },
+    { name: "App Store", icon: <SiAppstore /> },
+  ],
+},
+
+{
+  companyName: "Twigg",
+  companyLogo: "https://twigg.one/logo.svg",
+  projectName: "Twigg Website",
+  description:
+    "Designed and developed the official Twigg marketing website (twigg.one) using Next.js — a fintech startup backed by Aadyantax Technologies and a SEBI-registered advisor. Built with SSR for performance and SEO, scroll-based animations via Framer Motion, responsive layouts, and App Store/Play Store CTAs. Features multi-section storytelling across Twigg Connect, Pulse, Sense, AI, and Loop, with a beta waitlist flow and team page.",
+
+  iframeSrc: "https://twigg.one/",
+  fallbackImageSrc: "",
+  fallbackImageSrcMobile: "",
+
+  overview:
+    "The official website of Twigg (twigg.one), a next-gen personal finance platform by Aadyantax Technologies. The site communicates Twigg's five core product pillars — Connect, Pulse, Sense, AI, and Loop — through a clean, scroll-animated, multi-section layout. Built with Next.js for fast SSR, SEO optimisation, and seamless App Store/Play Store integration with a controlled beta join flow.",
+
+  objectivePoints: [
+    "Communicate Twigg's five product features (Connect, Pulse, Sense, AI, Loop) through engaging scroll-based UI.",
+    "Drive app downloads via App Store and Play Store CTAs integrated throughout the page.",
+    "Support beta waitlist flow with controlled access messaging.",
+    "Achieve high Lighthouse performance and SEO scores despite animation-heavy sections.",
+    "Deliver a trust-first design reflecting Twigg's regulatory compliance and SEBI partnership.",
+  ],
+
+  challenges: [
+    "Conveying complex fintech concepts (Account Aggregator, SEBI advisory, 15+ financial signals) in a simple, approachable visual narrative.",
+    "Building scroll-triggered animations for multiple product sections without degrading Lighthouse performance scores.",
+    "Handling platform-specific App Store and Play Store deep link CTAs with correct intent handling.",
+    "Creating a site that feels trustworthy and premium for a regulated, compliance-driven financial product.",
+    "Optimising image-heavy hero sections (multiple mobile mockups) for fast initial paint across devices.",
+  ],
+
+  issuesSolved: [
+    "Used Next.js dynamic() and use client selectively to lazy load heavy animation components, keeping initial bundle lean.",
+    "Configured SSR and proper meta tags for SEO across all sections despite dark, animation-heavy design.",
+    "Implemented Framer Motion with optimised motion paths and reduced repaints for smooth 60fps scroll animations.",
+    "Applied next/image with responsive sizing and priority loading for all above-the-fold hero mockups.",
+    "Built a clean, reusable section component pattern to maintain consistency across 6+ product feature sections.",
+  ],
+
+  learnings: [
+    "Deepened expertise in Next.js SSR strategy and SEO configuration for marketing-focused websites.",
+    "Learned to balance animation richness with Lighthouse performance targets.",
+    "Gained experience presenting regulated fintech products with trust-forward design decisions.",
+    "Improved component architecture for scroll-based storytelling with Framer Motion.",
+    "Understood how to structure a multi-section product site for clarity, conversion, and credibility.",
+  ],
+
+  techStack: [
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "React", icon: <SiReact /> },
+    { name: "TailwindCSS", icon: <SiTailwindcss /> },
+    { name: "Framer Motion", icon: <SiFramer /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "JavaScript", icon: <SiJavascript /> },
+    { name: "HTML", icon: <SiHtml5 /> },
+    { name: "CSS", icon: <SiCss3 /> },
+    { name: "Dynamic Routing", icon: <FaRoute /> },
+    { name: "Deep Linking", icon: <FaLink /> },
+    { name: "SEO Optimization", icon: <FaSearch /> },
+    { name: "Vercel", icon: <SiVercel /> },
+    { name: "App Store", icon: <SiAppstore /> },
+    { name: "Play Store", icon: <SiGoogleplay /> },
+  ],
+},
+  {
     companyName: "Skillspe",
     companyLogo: "/skillspe.svg",
     projectName: "Skillspe App",

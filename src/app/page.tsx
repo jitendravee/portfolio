@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import WorkSection from "@/components/WorkSection";
 import TextBuilder from "@/reusable/TextBuilder";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
           <Suspense fallback={<div>Loading work section...</div>}>
             <WorkSection />
           </Suspense>
+          <GetInTouch />
+
           <Footer />
         </div>
       </div>

@@ -18,16 +18,6 @@ export const socialLinks = [
     title: "GitHub",
   },
   {
-    icon: <DiscordIcon />,
-    href: "https://discord.com/users/yourid",
-    title: "Discord",
-  },
-  {
-    icon: <XIcon />,
-    href: "https://x.com/yourhandle",
-    title: "X (Twitter)",
-  },
-  {
     icon: <GmailIcon />,
     href: "mailto:jitendrajat6397@gmail.com",
     title: "Email",
