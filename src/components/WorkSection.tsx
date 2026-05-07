@@ -87,7 +87,7 @@ const works = [
 
   learnings: [
     "Mastered TanStack Router's context-based auth pattern — a cleaner alternative to Redux for route-level access control in React SPAs.",
-    "Deepened expertise in TanStack Query: query key design, cache invalidation strategies, optimistic updates, and dependent queries.",
+    "Deepened expertise in TanStack Query: query key design, cache invalidation strategies, optimistic updates,and dependent queries.",
     "Understood how to structure a React Context store for a travel app with multiple async data domains without causing unnecessary re-renders.",
     "Gained experience integrating Agentic AI (RAG, A2A, MCP) into a consumer product for real-time, personalised outputs.",
     "Learned how to build and iterate a collaborative planning feature — a technically complex, high-user-value differentiator in the travel-tech space.",
