@@ -16,6 +16,8 @@ import {
   SiRazorpay,
   SiApple,
   SiAndroid,
+  SiVite,
+  SiAmazon,
 } from "react-icons/si";
 import {
   FaBell,
@@ -31,6 +33,10 @@ import {
   FaTachometerAlt,
   FaCubes,
   FaWhatsapp,
+  FaShieldAlt,
+  FaRobot,
+  FaUsers,
+  FaMapMarkedAlt,
 } from "react-icons/fa";
 import { SiHtml5, SiCss3, SiVercel, SiFramer } from "react-icons/si";
 import { FaLink, FaRoute } from "react-icons/fa"; // for "deep linking" and "routes"
@@ -38,6 +44,73 @@ import TextBuilder from "@/reusable/TextBuilder";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const works = [
+  {
+  companyName: "Rimigo",
+  companyLogo: "https://rimigowebsitecontent.s3.ap-south-1.amazonaws.com/Rimigo_R_logo.svg",
+  projectName: "Rimigo Website",
+  description:
+    "Developed the official web platform for Rimigo — a Bengaluru-based AI travel-tech startup featured on Shark Tank India Season 5 (Episode 42), securing ₹1 Cr at a ₹66.67 Cr valuation. Built with React and Vite, the platform offers AI-generated itineraries, smart hotel picks, collaborative trip planning, and curated local experiences. Architected with TanStack Query for server-state, TanStack Router for type-safe routing with auth guards, and React Context for global auth and store management.",
+
+  iframeSrc: "https://rimigo.com/",
+  fallbackImageSrc: "",
+  fallbackImageSrcMobile: "",
+
+  overview:
+    "Rimigo is an AI-first international travel planning platform founded by Sahil Sharma, Shubham Chintalwar, and Aditya Shirole — the trio who previously sold their startup GigIndia to PhonePe. The platform consolidates itinerary building, personalised hotel recommendations, destination discovery (including hidden gems), collaborative trip planning, and community reviews into one seamless product. Rimigo uses RAG-based AI and Agentic AI (A2A, MCP) for real-time, context-aware travel suggestions. Assets are served via AWS S3 and the platform is tracked via Google Tag Manager.",
+
+  objectivePoints: [
+    "Deliver AI-generated, personalised travel itineraries based on user preferences, budget, and destination.",
+    "Enable collaborative trip planning — letting groups plan and edit itineraries together in real time.",
+    "Integrate smart hotel and experience recommendations beyond just popular tourist spots.",
+    "Build a robust auth system with protected routes and persistent user sessions.",
+    "Manage complex server state (search, itineraries, hotels, recommendations) efficiently without prop drilling.",
+    "Support community-driven insights via user reviews, ratings, and travel feedback.",
+  ],
+
+  challenges: [
+    "Architecting TanStack Router with auth context — passing authentication state via router.context and guarding protected routes using beforeLoad without breaking SSR-like behaviour.",
+    "Managing deeply nested, async server state (itineraries, hotels, destinations) across multiple views using TanStack Query — avoiding stale data and redundant API calls.",
+    "Building collaborative trip-planning flows where multiple users can edit shared itineraries with consistent state.",
+    "Designing an AI itinerary agent that produces depth-first travel plans (not just shallow suggestions) with real-time updates.",
+    "Serving and optimising large image assets (destination photography) via AWS S3 with fast load times.",
+    "Implementing a store context that keeps UI state (filters, selected destinations, active trip) in sync across deeply nested components.",
+  ],
+
+  issuesSolved: [
+    "Used TanStack Router's createRootRouteWithContext to inject AuthContext into the router — enabling type-safe, component-level auth guards via beforeLoad on every protected route.",
+    "Leveraged TanStack Query's query key factory pattern to scope and invalidate cache precisely — preventing stale itinerary or hotel data across navigation.",
+    "Built a global React Context store (TripContext / StoreContext) to manage active trip state, selected filters, and user preferences without Redux overhead.",
+    "Implemented optimistic mutations via TanStack Query's useMutation for instant UI feedback on itinerary edits before server confirmation.",
+    "Configured AWS S3 with proper CORS and CDN-friendly URLs for all destination and hotel imagery.",
+    "Rebuilt the Itinerary Agent post-Shark Tank for greater depth — moving from shallow day-plans to multi-layered, preference-aware itineraries.",
+  ],
+
+  learnings: [
+    "Mastered TanStack Router's context-based auth pattern — a cleaner alternative to Redux for route-level access control in React SPAs.",
+    "Deepened expertise in TanStack Query: query key design, cache invalidation strategies, optimistic updates, and dependent queries.",
+    "Understood how to structure a React Context store for a travel app with multiple async data domains without causing unnecessary re-renders.",
+    "Gained experience integrating Agentic AI (RAG, A2A, MCP) into a consumer product for real-time, personalised outputs.",
+    "Learned how to build and iterate a collaborative planning feature — a technically complex, high-user-value differentiator in the travel-tech space.",
+    "Experienced the full arc of a Shark Tank India pitch cycle — from building in public to national TV exposure and post-deal scaling.",
+  ],
+
+  techStack: [
+    { name: "React", icon: <SiReact /> },
+    { name: "Vite", icon: <SiVite /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "TailwindCSS", icon: <SiTailwindcss /> },
+    { name: "TanStack Query", icon: <FaDatabase /> },
+    { name: "TanStack Router", icon: <FaRoute /> },
+    { name: "React Context (Auth + Store)", icon: <FaCodeBranch /> },
+    { name: "Auth System (Protected Routes)", icon: <FaShieldAlt /> },
+    { name: "Agentic AI / RAG", icon: <FaRobot /> },
+    { name: "REST API", icon: <FaNetworkWired /> },
+    { name: "AWS S3 (Assets)", icon: <SiAmazon /> },
+    { name: "Google Tag Manager", icon: <FaChartLine /> },
+    { name: "Collaborative Planning", icon: <FaUsers /> },
+    { name: "Destination Discovery", icon: <FaMapMarkedAlt /> },
+  ],
+},
   {
   companyName: "Twigg",
   companyLogo: "https://twigg.one/logo.svg",
