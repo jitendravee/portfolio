@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-full relative">
         <Navbar />
         <a
-          href="/resume.pdf"
+          href="/Jitendra_Choudhary_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute z-20 right-0 w-[48px] h-[48px] bg-[var(--accent-opacity)] flex items-center justify-center rounded-full animate-[spin_15s_linear_infinite] hover:animate-none hover:scale-125 transition-all offset_ring cursor-pointer"
