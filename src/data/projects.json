@@ -1,0 +1,1019 @@
+[
+  {
+    "companyName": "Rimigo",
+    "companyLogo": "https://rimigowebsitecontent.s3.ap-south-1.amazonaws.com/Rimigo_R_logo.svg",
+    "projectName": "Rimigo Website",
+    "description": "Developed the official web platform for Rimigo — a Bengaluru-based AI travel-tech startup featured on Shark Tank India Season 5 (Episode 42), securing ₹1 Cr at a ₹66.67 Cr valuation. Built with React and Vite, the platform offers AI-generated itineraries, smart hotel picks, collaborative trip planning, and curated local experiences. Architected with TanStack Query for server-state, TanStack Router for type-safe routing with auth guards, and React Context for global auth and store management.",
+    "iframeSrc": "https://rimigo.com/",
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "overview": "Rimigo is an AI-first international travel planning platform founded by Sahil Sharma, Shubham Chintalwar, and Aditya Shirole — the trio who previously sold their startup GigIndia to PhonePe. The platform consolidates itinerary building, personalised hotel recommendations, destination discovery (including hidden gems), collaborative trip planning, and community reviews into one seamless product. Rimigo uses RAG-based AI and Agentic AI (A2A, MCP) for real-time, context-aware travel suggestions. Assets are served via AWS S3 and the platform is tracked via Google Tag Manager.",
+    "objectivePoints": [
+      "Deliver AI-generated, personalised travel itineraries based on user preferences, budget, and destination.",
+      "Enable collaborative trip planning — letting groups plan and edit itineraries together in real time.",
+      "Integrate smart hotel and experience recommendations beyond just popular tourist spots.",
+      "Build a robust auth system with protected routes and persistent user sessions.",
+      "Manage complex server state (search, itineraries, hotels, recommendations) efficiently without prop drilling.",
+      "Support community-driven insights via user reviews, ratings, and travel feedback."
+    ],
+    "challenges": [
+      "Architecting TanStack Router with auth context — passing authentication state via router.context and guarding protected routes using beforeLoad without breaking SSR-like behaviour.",
+      "Managing deeply nested, async server state (itineraries, hotels, destinations) across multiple views using TanStack Query — avoiding stale data and redundant API calls.",
+      "Building collaborative trip-planning flows where multiple users can edit shared itineraries with consistent state.",
+      "Designing an AI itinerary agent that produces depth-first travel plans (not just shallow suggestions) with real-time updates.",
+      "Serving and optimising large image assets (destination photography) via AWS S3 with fast load times.",
+      "Implementing a store context that keeps UI state (filters, selected destinations, active trip) in sync across deeply nested components."
+    ],
+    "issuesSolved": [
+      "Used TanStack Router's createRootRouteWithContext to inject AuthContext into the router — enabling type-safe, component-level auth guards via beforeLoad on every protected route.",
+      "Leveraged TanStack Query's query key factory pattern to scope and invalidate cache precisely — preventing stale itinerary or hotel data across navigation.",
+      "Built a global React Context store (TripContext / StoreContext) to manage active trip state, selected filters, and user preferences without Redux overhead.",
+      "Implemented optimistic mutations via TanStack Query's useMutation for instant UI feedback on itinerary edits before server confirmation.",
+      "Configured AWS S3 with proper CORS and CDN-friendly URLs for all destination and hotel imagery.",
+      "Rebuilt the Itinerary Agent post-Shark Tank for greater depth — moving from shallow day-plans to multi-layered, preference-aware itineraries."
+    ],
+    "learnings": [
+      "Mastered TanStack Router's context-based auth pattern — a cleaner alternative to Redux for route-level access control in React SPAs.",
+      "Deepened expertise in TanStack Query: query key design, cache invalidation strategies, optimistic updates,and dependent queries.",
+      "Understood how to structure a React Context store for a travel app with multiple async data domains without causing unnecessary re-renders.",
+      "Gained experience integrating Agentic AI (RAG, A2A, MCP) into a consumer product for real-time, personalised outputs.",
+      "Learned how to build and iterate a collaborative planning feature — a technically complex, high-user-value differentiator in the travel-tech space.",
+      "Experienced the full arc of a Shark Tank India pitch cycle — from building in public to national TV exposure and post-deal scaling."
+    ],
+    "techStack": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "TailwindCSS",
+      "TanStack Query",
+      "TanStack Router",
+      "React Context (Auth + Store)",
+      "Auth System (Protected Routes)",
+      "Agentic AI / RAG",
+      "REST API",
+      "AWS S3 (Assets)",
+      "Google Tag Manager",
+      "Collaborative Planning",
+      "Destination Discovery"
+    ],
+    "slug": "rimigo",
+    "title": "Rimigo",
+    "category": "travel / full-stack",
+    "tone": "rimigo",
+    "image": "/projects/reels/rimigo.webp",
+    "subtitle": "A better way to go somewhere.",
+    "platform": "Web",
+    "kind": "world",
+    "group": "products",
+    "video": "/projects/reels/rimigo.mp4"
+  },
+  {
+    "slug": "bandadda-graphics",
+    "title": "Made to be worn",
+    "projectName": "Made to be worn",
+    "companyName": "Bandadda",
+    "companyLogo": "/creative/bandadda-logo.webp",
+    "category": "graphic design / apparel",
+    "group": "graphics",
+    "kind": "artwork",
+    "tone": "creative",
+    "image": "/creative/music-speaks.webp",
+    "subtitle": "Original graphics. Real things.",
+    "platform": "Print & digital",
+    "iframeSrc": "https://www.bandadda.com/category/music-fan",
+    "description": "A collection of my Bandadda T-shirt graphics: music-led typography, line work, and illustrated characters. These are the original transparent artworks, presented as designs in their own right, beyond the website around them.",
+    "overview": "A collection of my Bandadda T-shirt graphics: music-led typography, line work, and illustrated characters. These are the original transparent artworks, presented as designs in their own right, beyond the website around them.",
+    "techStack": [
+      "Apparel graphics",
+      "Typography",
+      "Illustration",
+      "Art direction"
+    ],
+    "objectivePoints": [
+      "Design graphics that work on fabric as well as on a screen.",
+      "Explore lettering, illustration, and different visual rhythms.",
+      "Keep the artwork clean and ready for different garment colors."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "gallery": [
+      {
+        "src": "/creative/music-speaks.webp",
+        "alt": "Music speaks — original Bandadda apparel artwork",
+        "caption": "Music speaks",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/tiger.webp",
+        "alt": "Tiger study — original Bandadda apparel artwork",
+        "caption": "Tiger study",
+        "background": "#ece8dd"
+      },
+      {
+        "src": "/creative/guitar-lines.webp",
+        "alt": "Six strings, many voices — original Bandadda apparel artwork",
+        "caption": "Six strings, many voices",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/need-music.webp",
+        "alt": "Music like air — original Bandadda apparel artwork",
+        "caption": "Music like air",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/life-is-a-song.webp",
+        "alt": "Life is a song — original Bandadda apparel artwork",
+        "caption": "Life is a song",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/electric-sound.webp",
+        "alt": "Electric sound — original Bandadda apparel artwork",
+        "caption": "Electric sound",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/feel-the-blues.webp",
+        "alt": "Feel the blues — original Bandadda apparel artwork",
+        "caption": "Feel the blues",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/wolf.webp",
+        "alt": "Wolf study — original Bandadda apparel artwork",
+        "caption": "Wolf study",
+        "background": "#ece8dd"
+      },
+      {
+        "src": "/creative/life-sounds-better.webp",
+        "alt": "Life sounds better — original Bandadda apparel artwork",
+        "caption": "Life sounds better",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/lion.webp",
+        "alt": "Lion study — original Bandadda apparel artwork",
+        "caption": "Lion study",
+        "background": "#ece8dd"
+      },
+      {
+        "src": "/creative/connecting-people.webp",
+        "alt": "Connecting people — original Bandadda apparel artwork",
+        "caption": "Connecting people",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/music-is-life.webp",
+        "alt": "Music is life — original Bandadda apparel artwork",
+        "caption": "Music is life",
+        "background": "#24282b"
+      },
+      {
+        "src": "/creative/dance-with-music.webp",
+        "alt": "Dance with the music — original Bandadda apparel artwork",
+        "caption": "Dance with the music",
+        "background": "#24282b"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The visual language",
+        "body": "Music, expressive lettering, instrument studies, and detailed illustrations. The collection moves between bold color and quiet line work, while keeping the artwork separate from its background."
+      },
+      {
+        "title": "From artwork to apparel",
+        "points": [
+          "Original transparent designs retain their edges and details.",
+          "Each graphic can sit on different garment colors without a baked-in rectangle.",
+          "The portfolio selection focuses on clean, non-explicit artwork."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bandadda",
+    "title": "Bandadda",
+    "projectName": "Bandadda",
+    "companyName": "Bandadda",
+    "companyLogo": "/creative/bandadda-logo.webp",
+    "category": "ownership / design & engineering",
+    "group": "products",
+    "kind": "browser",
+    "tone": "creative",
+    "image": "/projects/reels/bandadda.webp",
+    "subtitle": "A brand, a product, a community.",
+    "platform": "Web & creative direction",
+    "iframeSrc": "https://www.bandadda.com/",
+    "description": "Bandadda brings music, merchandise, custom apparel, and community into one place. My ownership spans the visual work and the product itself: designing the graphics, shaping the experience, and building the website that connects it all.",
+    "overview": "Bandadda brings music, merchandise, custom apparel, and community into one place. My ownership spans the visual work and the product itself: designing the graphics, shaping the experience, and building the website that connects it all.",
+    "techStack": [
+      "Product design",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "WooCommerce",
+      "Creative direction"
+    ],
+    "objectivePoints": [
+      "Own the journey from an idea and visual direction to a working product.",
+      "Connect apparel, a design studio, events, and music spaces.",
+      "Make the storefront feel like a home for music culture."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "video": "/projects/reels/bandadda.mp4",
+    "gallery": [
+      {
+        "src": "/creative/bandadda-hero.webp",
+        "alt": "Bandadda brand and storefront imagery",
+        "caption": "The world around the product."
+      }
+    ],
+    "sections": [
+      {
+        "title": "One idea, many touchpoints",
+        "points": [
+          "Graphic collections and an identity rooted in music.",
+          "A storefront, product discovery, and a customizable design studio.",
+          "Event discovery, jamrooms, and spaces for the community to connect."
+        ]
+      },
+      {
+        "title": "From design to implementation",
+        "points": [
+          "Translate brand decisions into layouts, product interactions, and real interfaces.",
+          "Connect the customer-facing experience with commerce and operational tools.",
+          "Keep ownership across the details, rather than stopping at the mockup."
+        ]
+      }
+    ]
+  },
+  {
+    "companyName": "Twigg",
+    "companyLogo": "https://twigg.one/logo.svg",
+    "projectName": "Twigg App",
+    "description": "Built the cross-platform Twigg mobile app using Flutter and Bloc — a personal finance platform that consolidates bank accounts, investments, loans, and insurance in one place via RBI's Account Aggregator framework. Integrated Twigg Pulse (15+ financial health signals), Twigg AI (context-aware financial co-pilot), Twigg Sense (financial fact-checker), and consent-based read-only account linking. Published to both App Store and Play Store in beta.",
+    "iframeSrc": "https://play.google.com/store/apps/details?id=com.aadyantx.twigg",
+    "fallbackImageSrc": "https://twigg.one/_next/image?url=%2Fhero%2Fmobile_3.png&w=384&q=75",
+    "fallbackImageSrcMobile": "https://twigg.one/_next/image?url=%2Fhero%2Fmobile_3.png&w=384&q=75",
+    "overview": "Twigg is an AI-powered personal finance app built for salaried professionals, early investors, and first-gen wealth builders. It links all financial accounts via RBI's Account Aggregator (consent-based, read-only), analyses 15+ financial health signals via Twigg Pulse, lets users fact-check financial claims via Twigg Sense, and provides personalised guidance through Twigg AI — all in one clean, secure platform. Available in beta on App Store and Play Store.",
+    "objectivePoints": [
+      "Consolidate bank accounts, investments, loans, and insurance in one place.",
+      "Integrate RBI Account Aggregator and credit bureau for secure, consent-based data linking.",
+      "Deliver 15+ financial health signals across protection, cashflow, credit, investments, and safety.",
+      "Provide AI-powered, context-aware financial guidance grounded in the user's actual data.",
+      "Enable financial claim fact-checking via Twigg Sense for reels, tweets, and tips."
+    ],
+    "challenges": [
+      "Integrating RBI Account Aggregator consent flow — a multi-step, regulated process requiring precise handling of consent tokens, redirect states, and data fetch triggers.",
+      "Building Twigg Pulse: aggregating and scoring 15+ financial signals across diverse data sources (banks, mutual funds, insurance, loans) into a unified health view.",
+      "Implementing Twigg Sense — a fact-checking feature that cross-references financial claims against the user's real portfolio data for personalised relevance.",
+      "Managing deeply nested, async financial data streams from multiple institutions with varying API response schemas.",
+      "Maintaining read-only, zero-data-storage compliance across all linked account flows per RBI AA regulations.",
+      "Designing a clean, anxiety-free UI for a domain (personal finance) that most users find intimidating.",
+      "Handling cross-platform nuances in deep linking, OTP authentication, and session persistence between iOS and Android."
+    ],
+    "issuesSolved": [
+      "Built a modular consent-flow handler that gracefully manages AA token lifecycle, redirects, and failure states.",
+      "Designed a signal-scoring engine that maps raw financial data to actionable Pulse insights using clean domain logic.",
+      "Used Bloc at root level for shared state across financial dashboards, ensuring consistent data without redundant API calls.",
+      "Implemented lazy loading and pagination for large financial data sets to maintain smooth performance.",
+      "Resolved cross-platform deep link issues by configuring assetlinks.json (Android) and universal links (iOS) for seamless app-open flows."
+    ],
+    "learnings": [
+      "Gained deep understanding of RBI Account Aggregator architecture and consent-based financial data flows.",
+      "Mastered Bloc pattern for complex, multi-domain state management at scale.",
+      "Learned to design for regulated, compliance-sensitive fintech environments.",
+      "Improved skills in handling heterogeneous API schemas from multiple financial institutions.",
+      "Strengthened cross-platform deployment experience across App Store and Play Store.",
+      "Understood how to translate complex financial concepts into simple, actionable mobile UX."
+    ],
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "Bloc (State Management)",
+      "Firebase",
+      "GoRouter (Navigation)",
+      "Deep Linking",
+      "RBI Account Aggregator",
+      "OTP Authentication",
+      "REST API / Dio",
+      "Analytics",
+      "Push Notifications",
+      "Play Store",
+      "App Store"
+    ],
+    "slug": "twigg-app",
+    "title": "Twigg One",
+    "category": "fintech / mobile",
+    "tone": "twigg",
+    "image": "/projects/twigg-1.webp",
+    "subtitle": "Your money. The whole picture.",
+    "platform": "iOS & Android",
+    "kind": "phones",
+    "group": "products"
+  },
+  {
+    "slug": "bandadda-community",
+    "title": "A place to connect",
+    "projectName": "A place to connect",
+    "companyName": "Bandadda",
+    "companyLogo": "/creative/bandadda-logo.webp",
+    "category": "events / music & community",
+    "group": "stories",
+    "kind": "community",
+    "tone": "creative",
+    "image": "/creative/event-poster.webp",
+    "subtitle": "Built around people, not just products.",
+    "platform": "Events & community",
+    "iframeSrc": "https://www.bandadda.com/events",
+    "description": "The community side of Bandadda: places to discover gigs, find a jamroom, and connect with music culture. This work connects the creative identity with real-world experiences and the tools that help people take part.",
+    "overview": "The community side of Bandadda: places to discover gigs, find a jamroom, and connect with music culture. This work connects the creative identity with real-world experiences and the tools that help people take part.",
+    "techStack": [
+      "Community experiences",
+      "Event discovery",
+      "Product design",
+      "Next.js"
+    ],
+    "objectivePoints": [
+      "Give events and music spaces a place alongside the merchandise.",
+      "Design discovery and organizer-facing experiences.",
+      "Connect people with the next gig or the next place to play."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "gallery": [
+      {
+        "src": "/creative/event-poster.webp",
+        "alt": "Event artwork displayed on Bandadda",
+        "caption": "Event discovery on Bandadda."
+      },
+      {
+        "src": "/creative/community.webp",
+        "alt": "Music community imagery from Bandadda",
+        "caption": "The people around the product."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Beyond the storefront",
+        "body": "Bandadda is more than a catalog. Its event and jamroom experiences give the community something to do, somewhere to meet, and a reason to return."
+      },
+      {
+        "title": "Connecting the touchpoints",
+        "points": [
+          "Present events and music spaces with clear paths to explore.",
+          "Support the experience around discovery, not just the final transaction.",
+          "Keep the visual identity connected across merchandise, content, and community."
+        ]
+      }
+    ]
+  },
+  {
+    "companyName": "Twigg",
+    "companyLogo": "https://twigg.one/logo.svg",
+    "projectName": "Twigg Website",
+    "description": "Designed and developed the official Twigg marketing website (twigg.one) using Next.js — a fintech startup backed by Aadyantax Technologies and a SEBI-registered advisor. Built with SSR for performance and SEO, scroll-based animations via Framer Motion, responsive layouts, and App Store/Play Store CTAs. Features multi-section storytelling across Twigg Connect, Pulse, Sense, AI, and Loop, with a beta waitlist flow and team page.",
+    "iframeSrc": "https://twigg.one/",
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "overview": "The official website of Twigg (twigg.one), a next-gen personal finance platform by Aadyantax Technologies. The site communicates Twigg's five core product pillars — Connect, Pulse, Sense, AI, and Loop — through a clean, scroll-animated, multi-section layout. Built with Next.js for fast SSR, SEO optimisation, and seamless App Store/Play Store integration with a controlled beta join flow.",
+    "objectivePoints": [
+      "Communicate Twigg's five product features (Connect, Pulse, Sense, AI, Loop) through engaging scroll-based UI.",
+      "Drive app downloads via App Store and Play Store CTAs integrated throughout the page.",
+      "Support beta waitlist flow with controlled access messaging.",
+      "Achieve high Lighthouse performance and SEO scores despite animation-heavy sections.",
+      "Deliver a trust-first design reflecting Twigg's regulatory compliance and SEBI partnership."
+    ],
+    "challenges": [
+      "Conveying complex fintech concepts (Account Aggregator, SEBI advisory, 15+ financial signals) in a simple, approachable visual narrative.",
+      "Building scroll-triggered animations for multiple product sections without degrading Lighthouse performance scores.",
+      "Handling platform-specific App Store and Play Store deep link CTAs with correct intent handling.",
+      "Creating a site that feels trustworthy and premium for a regulated, compliance-driven financial product.",
+      "Optimising image-heavy hero sections (multiple mobile mockups) for fast initial paint across devices."
+    ],
+    "issuesSolved": [
+      "Used Next.js dynamic() and use client selectively to lazy load heavy animation components, keeping initial bundle lean.",
+      "Configured SSR and proper meta tags for SEO across all sections despite dark, animation-heavy design.",
+      "Implemented Framer Motion with optimised motion paths and reduced repaints for smooth 60fps scroll animations.",
+      "Applied next/image with responsive sizing and priority loading for all above-the-fold hero mockups.",
+      "Built a clean, reusable section component pattern to maintain consistency across 6+ product feature sections."
+    ],
+    "learnings": [
+      "Deepened expertise in Next.js SSR strategy and SEO configuration for marketing-focused websites.",
+      "Learned to balance animation richness with Lighthouse performance targets.",
+      "Gained experience presenting regulated fintech products with trust-forward design decisions.",
+      "Improved component architecture for scroll-based storytelling with Framer Motion.",
+      "Understood how to structure a multi-section product site for clarity, conversion, and credibility."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Framer Motion",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Dynamic Routing",
+      "Deep Linking",
+      "SEO Optimization",
+      "Vercel",
+      "App Store",
+      "Play Store"
+    ],
+    "slug": "twigg-website",
+    "title": "Twigg",
+    "category": "fintech / web",
+    "tone": "twigg-web",
+    "image": "/projects/reels/twigg.webp",
+    "subtitle": "Money, made simple.",
+    "platform": "Web",
+    "kind": "phones",
+    "group": "products",
+    "video": "/projects/reels/twigg.mp4"
+  },
+  {
+    "slug": "wayvia",
+    "title": "Wayvia",
+    "projectName": "Wayvia",
+    "companyName": "Wayvia",
+    "companyLogo": "",
+    "category": "product thinking / software",
+    "group": "products",
+    "kind": "browser",
+    "tone": "wayvia",
+    "image": "/projects/reels/wayvia.webp",
+    "subtitle": "One destination. More ways to get there.",
+    "platform": "Web & creative direction",
+    "iframeSrc": "https://wayvia.xyz/",
+    "description": "Wayvia is my train-journey planning product for finding alternatives when the usual route does not work. It brings connecting routes, useful rail tools, and travel information into a single experience, from the product idea through its implementation.",
+    "overview": "Wayvia is my train-journey planning product for finding alternatives when the usual route does not work. It brings connecting routes, useful rail tools, and travel information into a single experience, from the product idea through its implementation.",
+    "techStack": [
+      "Product design",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Journey planning"
+    ],
+    "objectivePoints": [
+      "Help people discover another way to reach their destination.",
+      "Bring route planning and useful rail tools into one clear experience.",
+      "Own the product decisions and the software behind them."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "video": "/projects/reels/wayvia.mp4",
+    "gallery": [
+      {
+        "src": "/creative/wayvia-flow.webp",
+        "alt": "Wayvia interface and journey planning flow",
+        "caption": "Thinking through the journey, not just the screen."
+      }
+    ],
+    "sections": [
+      {
+        "title": "A problem worth thinking about",
+        "body": "A journey should not end at an unavailable direct route. Wayvia explores connections, alternatives, and the information a traveller needs to make the next decision."
+      },
+      {
+        "title": "Product thinking in practice",
+        "points": [
+          "Connect the promise on the landing page to the actual planning tools.",
+          "Keep route discovery, live tools, and supporting guides in the same product language.",
+          "Build the interfaces and underlying flows together."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bandadda-stories",
+    "title": "The story around the product",
+    "projectName": "The story around the product",
+    "companyName": "Bandadda",
+    "companyLogo": "/creative/bandadda-logo.webp",
+    "category": "content / direction & editing",
+    "group": "stories",
+    "kind": "film",
+    "tone": "creative",
+    "image": "/creative/story-poster.webp",
+    "subtitle": "Design has a life beyond the screen.",
+    "platform": "Short-form content",
+    "iframeSrc": "https://www.bandadda.com/",
+    "description": "Short-form content for Bandadda, turning the details of the product into a story. This selection uses my existing campaign material: a closer look at the artwork, the print, and the finished piece.",
+    "overview": "Short-form content for Bandadda, turning the details of the product into a story. This selection uses my existing campaign material: a closer look at the artwork, the print, and the finished piece.",
+    "techStack": [
+      "Content creation",
+      "Storyboarding",
+      "Video editing",
+      "Brand storytelling"
+    ],
+    "objectivePoints": [
+      "Make the physical product and its details the focus.",
+      "Use framing, pacing, and transitions to build a short story.",
+      "Carry the same brand voice from the graphics into the content."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "video": "/creative/making-the-story.mp4",
+    "gallery": [
+      {
+        "src": "/creative/story-frame-1.webp",
+        "alt": "Bandadda apparel detail from original campaign material",
+        "caption": "The artwork, up close."
+      },
+      {
+        "src": "/creative/story-frame-2.webp",
+        "alt": "Finished Bandadda graphic T-shirt",
+        "caption": "The finished piece."
+      }
+    ],
+    "sections": [
+      {
+        "title": "From product to story",
+        "body": "The work continues after the design and the website. Product close-ups, sequencing, and an intentional edit turn a graphic on fabric into something people can spend time with."
+      },
+      {
+        "title": "One visual world",
+        "points": [
+          "Use the actual product and original campaign material.",
+          "Keep the graphic, the garment, and the edit connected.",
+          "Bring content creation into the same ownership as the design and software."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "flowpdf",
+    "title": "FlowPDF",
+    "projectName": "FlowPDF",
+    "companyName": "Personal project",
+    "companyLogo": "",
+    "category": "AI / product ownership",
+    "group": "products",
+    "kind": "browser",
+    "tone": "creative",
+    "image": "/projects/reels/flowpdf.webp",
+    "subtitle": "Documents, in your own words.",
+    "platform": "Web & creative direction",
+    "iframeSrc": "https://flowpdf.online/",
+    "description": "An AI-powered PDF editor I built to make document editing feel like a conversation. People can rotate, delete, merge, and edit documents through natural-language requests, with attention to a useful experience and an efficient request pipeline.",
+    "overview": "An AI-powered PDF editor I built to make document editing feel like a conversation. People can rotate, delete, merge, and edit documents through natural-language requests, with attention to a useful experience and an efficient request pipeline.",
+    "techStack": [
+      "Product design",
+      "AI integration",
+      "PDF tooling",
+      "Cost optimization"
+    ],
+    "objectivePoints": [
+      "Make common PDF edits approachable through a conversation.",
+      "Connect the interface to real document operations.",
+      "Keep the AI request pipeline efficient."
+    ],
+    "challenges": [],
+    "issuesSolved": [],
+    "learnings": [],
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "video": "/projects/reels/flowpdf.mp4",
+    "sections": [
+      {
+        "title": "A simpler interaction",
+        "body": "Describe what needs to change in the document, instead of hunting through a separate tool for each operation."
+      },
+      {
+        "title": "Ownership across the product",
+        "points": [
+          "Build the interface and editing workflow around the same user goal.",
+          "Connect natural-language requests to document operations.",
+          "Work on the cost and efficiency of the underlying AI pipeline."
+        ]
+      }
+    ]
+  },
+  {
+    "companyName": "Saharsh Cabins",
+    "companyLogo": "https://www.saharsh.co/assets/logo/logo.svg",
+    "projectName": "Saharsh Cabins Website",
+    "description": "Designed and developed the official website for Saharsh Cabins — a luxury prefab cabin brand with 15 years of industry experience. Built with Next.js, Framer Motion, and TailwindCSS, the site features an animated product comparison section, interactive category slider, product catalogue (Hutsie, Rustico, Barnie, Skylighter, Triango), FAQ accordion, and a contact form wired to Google Sheets and Gmail automation. Achieved a 100/100 Lighthouse SEO score.",
+    "iframeSrc": "https://www.saharsh.co/",
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "overview": "saharsh.co is the marketing and lead-generation website for Saharsh Cabins, a luxury prefab cabin manufacturer operating across India with four production facilities. The site serves resort owners, farmhouse builders, and commercial clients exploring modular construction. It showcases product categories (luxury cottages, villas, cafes, sales offices), walks visitors through the 4-step process, presents the Saharsh vs. Traditional construction comparison, and captures qualified leads via an integrated contact form.",
+    "objectivePoints": [
+      "Showcase 5 bestselling cabin models with rich imagery and category filtering.",
+      "Present a side-by-side Saharsh vs. Traditional construction comparison to drive conversion.",
+      "Capture and qualify leads via a contact form (budget, interest) with backend automation.",
+      "Auto-fill Google Sheets with every form submission for the sales team.",
+      "Trigger confirmation emails to both the user and the admin on every lead.",
+      "Achieve high Lighthouse scores for SEO and performance despite image-heavy content."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Framer Motion",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Google Sheets API",
+      "Gmail (Nodemailer)",
+      "SEO Optimization",
+      "Dynamic Routing",
+      "Vercel"
+    ],
+    "challenges": [
+      "Building an animated side-by-side comparison section that feels premium and renders at 60fps on mobile.",
+      "Wiring the contact form to simultaneously write to Google Sheets and send dual emails (user + admin) without a third-party service.",
+      "Optimising a very image-heavy site (full-bleed cabin photography) to still achieve top Lighthouse scores.",
+      "Implementing an auto-scrolling product category slider with touch support and no layout shift.",
+      "Building the FAQ accordion with smooth height animations without using a library.",
+      "Handling form state, validation, and submission feedback in a single seamless UX flow."
+    ],
+    "issuesSolved": [
+      "Integrated Google Sheets API via a Next.js API route — form data is appended as a new row on every submission with timestamp, name, budget, and interest fields.",
+      "Used Nodemailer with a Gmail SMTP app password to fire two emails on submission: a confirmation to the user and a lead-alert to the sales team.",
+      "Applied next/image with priority loading and responsive sizes for all above-the-fold cabin images, keeping LCP under 2s.",
+      "Used CSS scroll-snap for the category slider — zero JS dependency, buttery smooth on mobile.",
+      "Built the FAQ accordion with CSS max-height transition and overflow hidden — no layout jank, no library.",
+      "Added form validation with inline error states and a success screen post-submit to prevent double submissions."
+    ],
+    "learnings": [
+      "Learned to integrate Google Sheets as a lightweight CRM via the Sheets API and service account credentials.",
+      "Understood the SMTP flow with Nodemailer — setting up app passwords, email templates, and error handling for both sender addresses.",
+      "Improved mastery of Framer Motion for scroll-triggered section reveals on a marketing site.",
+      "Gained experience building a conversion-focused landing page for a B2B luxury brand — balancing aesthetics with lead-gen goals.",
+      "Learned how to structure a Next.js API route that handles multiple async side effects (DB write + two emails) with proper error boundaries."
+    ],
+    "slug": "saharsh-cabins",
+    "title": "Saharsh Cabins",
+    "category": "architecture / web",
+    "tone": "saharsh",
+    "image": "/projects/reels/saharsh.webp",
+    "subtitle": "Spaces built for the extraordinary.",
+    "platform": "Web",
+    "kind": "photo",
+    "group": "products",
+    "video": "/projects/reels/saharsh.mp4"
+  },
+  {
+    "companyName": "Skillspe",
+    "companyLogo": "/skillspe.svg",
+    "projectName": "Skillspe App",
+    "description": "Led full-stack development of the Skillspe app using Flutter and Bloc, integrating Firebase for real-time data, background push notifications, analytics, and OTP-based authentication. Enabled GoRouter navigation, deep linking, third-party sharing (e.g., WhatsApp), and UPI payments via Razorpay. Published to Play Store and App Store with production-ready performance and UX.",
+    "iframeSrc": "https://play.google.com/store/apps/details?id=com.application.skillspe",
+    "fallbackImageSrc": "/playstore.gif",
+    "fallbackImageSrcMobile": "/playstore.gif",
+    "overview": "Discover SkillsPe, the ultimate opinion trading platform where your insights can turn into real rewards. Engage with friends and family in private challenges, or join the broader community in public challenges and quizzes. SkillsPe offers a unique blend of excitement, strategy, and knowledge, allowing you to bid on opinions and earn money.",
+    "objectivePoints": [
+      "Allow users to create and join opinion-based challenges",
+      "Support private and public gameplay with real rewards",
+      "Ensure real-time data sync for live bidding experience",
+      "Provide seamless UPI payments across Android and iOS",
+      "Offer a reliable wallet system for transactions and settlements"
+    ],
+    "challenges": [
+      "Building private challenges flow — where users can create challenges, invite others, and declare winning opinions",
+      "Managing 9 states with 3 challenge types (Challenge, Moderator, Motivator) and 3 statuses (Live, Results Pending, Completed)",
+      "Updating wallet history accurately across challenge state transitions (credit/debit logic)",
+      "Developing a registry-based architecture using enums to map types/statuses to screens for scalable and modular screen rendering",
+      "Implementing UPI integration with app-specific intent-based launching (Android supported generic UPI link; iOS required specific deep links)",
+      "Creating a UPI app scraper system to detect installed apps, match with mapped intent URLs, and dynamically build a UPI bottom sheet",
+      "Fetching real-time order book data without manual refresh using Bloc pattern at the root level with timed polling and state syncing",
+      "Fixing push notification deep linking issue (Android opened Play Store instead of app); resolved via `assetlinks.json`, intent filters, and certificate handling"
+    ],
+    "issuesSolved": [
+      "Built enum-based architecture for clean state handling and dynamic screen routing",
+      "Introduced intent-based UPI logic to overcome platform differences in payment workflows",
+      "Implemented Bloc at root for state sharing and real-time data refresh",
+      "Fixed deep linking bug in push notifications by configuring `assetlinks.json` and Android manifest"
+    ],
+    "learnings": [
+      "Mastered Bloc pattern for scalable state management",
+      "Learned to architect using layered architecture and enum-driven logic",
+      "Implemented advanced UPI workflows with intent scrapers",
+      "Handled deep linking and app association for push notifications",
+      "Improved debugging skills for complex cross-platform issues",
+      "Gained experience deploying production-ready apps on Android and iOS"
+    ],
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Push Notifications",
+      "Bloc (State Management)",
+      "GoRouter",
+      "Deep Linking",
+      "Dio (API Client)",
+      "Analytics",
+      "Razorpay (Payments)",
+      "UPI Intent (Android)",
+      "App-Switch Flow (iOS)",
+      "App Sharing (WhatsApp)",
+      "Play Store",
+      "App Store"
+    ],
+    "slug": "skillspe-app",
+    "title": "SkillsPe App",
+    "category": "product / mobile",
+    "tone": "skillspe",
+    "image": "/projects/skillspe-poster.webp",
+    "subtitle": "Play to your strengths.",
+    "platform": "iOS & Android",
+    "kind": "phone",
+    "video": "/projects/skillspe-app.mp4",
+    "group": "products"
+  },
+  {
+    "companyName": "Service Hive",
+    "companyLogo": "/servicehive.png",
+    "projectName": "Official Website of Service Hive",
+    "fallbackImageSrcMobile": "/servicehive_website_mobile.png",
+    "description": "Redesigned and rebuilt the entire Service Hive website with a modern UI, dynamic service pages (14+), scroll-based animations, call scheduling, timely popups, and a fully responsive theme. Implemented dynamic routing using Next.js, integrated Framer Motion for smooth transitions, and optimized SEO to achieve a 100/100 score on Lighthouse audits. The project was deployed on Hostinger.",
+    "iframeSrc": "https://www.servicehive.tech",
+    "fallbackImageSrc": "/servicehive_website.png",
+    "overview": "Official website of Service Hive, redesigned from scratch with a modern UI, scroll animations, SEO optimization, and dynamic service-based pages. Built with Next.js and deployed on Hostinger, it showcases the services while integrating scheduling, popups, and app integration.",
+    "objectivePoints": [
+      "Provide a seamless experience for users to explore 14+ services.",
+      "Allow users to book services or schedule calls via dynamic CTAs.",
+      "Improve performance and achieve high Lighthouse audit scores.",
+      "Integrate app-level redirection with fallback for non-installed apps."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Dynamic Routing",
+      "SEO Optimization",
+      "Hostinger"
+    ],
+    "challenges": [
+      "Built dynamic service pages with scroll-based UI transitions.",
+      "Implemented static routing for each service using dynamic route slugs.",
+      "Added app redirection with fallback logic in case Play Store was unavailable.",
+      "Maintained fast load speed despite using animation-heavy design."
+    ],
+    "issuesSolved": [
+      "SEO performance tuned to reach perfect Lighthouse scores across metrics.",
+      "Lazy loaded animation-heavy components using Next.js `dynamic()`.",
+      "Used `use client` only when needed and leveraged static site generation (SSG) effectively.",
+      "Enabled app-to-web and web-to-app deep linking with fallback handling."
+    ],
+    "learnings": [
+      "Handled complex SEO scenarios using structured metadata and SSR.",
+      "Improved mastery over scroll-based UX and Framer Motion integration.",
+      "Learned static routing strategies for scale and maintainability.",
+      "Connected frontend routing with mobile app deep link triggers."
+    ],
+    "slug": "service-hive",
+    "title": "Service Hive",
+    "category": "business / web",
+    "tone": "service",
+    "image": "/projects/reels/service-hive.webp",
+    "subtitle": "From an idea to a digital experience.",
+    "platform": "Web",
+    "kind": "browser",
+    "group": "products",
+    "video": "/projects/reels/service-hive.mp4"
+  },
+  {
+    "companyName": "Skillspe",
+    "companyLogo": "/skillspe.svg",
+    "description": "Designed, developed, and deployed the official website of Skillspe using modern web technologies. Delivered a fast, responsive UI with TailwindCSS, integrated smooth animations via Framer Motion, and implemented SEO-friendly dynamic routing with deep linking support. Ensured high Lighthouse scores for performance and accessibility, with zero downtime deployment through Vercel and robust production optimization.",
+    "projectName": "Skillspe Website",
+    "iframeSrc": "https://www.skillspe.com/",
+    "fallbackImageSrc": "",
+    "overview": "The official website of Skillspe, built using Next.js, is designed to inform users about the Skillspe app and its unique features. It provides a fast, SEO-optimized, and responsive experience, with support for deep linking, user-triggered app interactions, and dynamically generated streamer pages.",
+    "objectivePoints": [
+      "Provide an informative, user-friendly website for Skillspe's mobile app.",
+      "Enable deep linking from web to app with platform-specific handling.",
+      "Support SEO and fast performance despite dynamic visuals.",
+      "Serve unique challenge pages for individual streamers to boost user engagement.",
+      "Ensure seamless routing using Next.js dynamic and static strategies."
+    ],
+    "techStack": [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "CSS",
+      "HTML",
+      "Next.js Routing",
+      "Vercel",
+      "Framer Motion",
+      "Deep Linking"
+    ],
+    "challenges": [
+      "Implemented deep linking from website to app with fallbacks for non-installed users.",
+      "Created dynamic and static routing for streamer-specific challenge pages.",
+      "Optimized performance despite large visual and background assets.",
+      "Handled Play Store not installed fallback logic on 'Join Now' buttons."
+    ],
+    "issuesSolved": [
+      "Solved deep linking redirection using intent links, with fallback UI when Play Store is unavailable.",
+      "Enabled streamer challenge pages via dynamic routes using `getStaticPaths` and JSON-based slugs.",
+      "Improved SEO despite dark backgrounds and animations by configuring Next.js SSR and preloading.",
+      "Lazy loaded animation-heavy components using `dynamic()` and `use client` to speed up initial paint."
+    ],
+    "learnings": [
+      "Deep understanding of Next.js routing patterns: dynamic vs static rendering.",
+      "Practical experience in handling app/web integration using intent-based deep links.",
+      "SEO optimization techniques for dark-themed, animation-heavy websites.",
+      "Improved proficiency with code-splitting, SSR strategies, and performance tuning in Next.js."
+    ],
+    "slug": "skillspe-website",
+    "title": "SkillsPe",
+    "category": "product / web",
+    "tone": "skillspe-web",
+    "image": "/projects/reels/skillspe.webp",
+    "subtitle": "Train your skills. Trade your skills.",
+    "platform": "Web",
+    "kind": "brand",
+    "group": "products",
+    "video": "/projects/reels/skillspe.mp4"
+  },
+  {
+    "description": "Engineered and deployed a scalable Admin Console for Skillspe to manage user data, app content, and analytics — including support for push notifications to the mobile app and real-time reporting. Implemented secure authentication, role-based access control, and modular architecture to ensure maintainability and future scalability. Optimized for performance and deployed seamlessly using Vercel.",
+    "projectName": "Skillspe Admin Console",
+    "iframeSrc": "https://www.skillspe.com",
+    "fallbackImageSrc": "/admin_console.png",
+    "fallbackImageSrcMobile": "/admin_console_mobile.png",
+    "companyName": "Skillspe",
+    "companyLogo": "/skillspe.svg",
+    "overview": "A powerful internal dashboard built for Skillspe to manage users, app content, campaigns, public opinion data, push notifications, and track engagement analytics. Designed with scalability, security, and performance in mind for the business and moderation team.",
+    "objectivePoints": [
+      "Enable admins to manage user profiles, campaigns, and public opinion data.",
+      "Trigger push notifications directly from the console to the mobile app.",
+      "Track real-time analytics including opinion trends and engagement statistics.",
+      "Ensure secure, role-based access and modular architecture."
+    ],
+    "techStack": [
+      "React",
+      "Redux (State Management)",
+      "TailwindCSS",
+      "Vercel",
+      "Analytics",
+      "Push Notifications"
+    ],
+    "challenges": [
+      "Synchronizing campaign and public opinion data across multiple screens.",
+      "Implementing Redux slices and thunks to handle complex data flows.",
+      "Creating real-time, visually meaningful admin analytics dashboards.",
+      "Maintaining consistency of date/time-based data throughout the app."
+    ],
+    "issuesSolved": [
+      "Introduced global Redux store with properly scoped slices for modular data access.",
+      "Integrated graph components to represent complex user engagement analytics like win rates, participation, and click-through behavior.",
+      "Ensured secure updates (create, update, delete) to campaign/public entities via controlled UI layers.",
+      "Optimized state updates for high-volume data without performance lag."
+    ],
+    "learnings": [
+      "Practical Redux Toolkit implementation with middleware (thunks) for async data flows.",
+      "Learned to maintain data integrity across deeply nested React components using shared state.",
+      "Handled admin analytics and graph rendering using reusable component patterns.",
+      "Designed scalable, secure internal tools using modular design architecture."
+    ],
+    "slug": "skillspe-admin",
+    "title": "SkillsPe Console",
+    "category": "dashboard / engineering",
+    "tone": "console",
+    "image": "/admin_console.png",
+    "subtitle": "Behind the scenes. In control.",
+    "platform": "Web application",
+    "kind": "browser",
+    "group": "systems"
+  },
+  {
+    "companyName": "Service Hive",
+    "companyLogo": "/servicehive.png",
+    "projectName": "Praxis forge website ",
+    "description": "Developed the Praxis Forge website using Next.js with a clean architecture, dynamic routing, and SEO optimization through keyword targeting. Implemented smooth UI animations, scroll-based motion effects, and full support for both dark and light themes to enhance user experience.",
+    "iframeSrc": "https://www.praxisforge.com",
+    "fallbackImageSrc": "",
+    "overview": "Official website of Praxis Forge, built to reflect a modern, clean, and brand-consistent experience with light/dark theming, scroll-based animations, and full SEO optimization for professional visibility. Focused on delivering a smooth, responsive UI powered by Next.js and TailwindCSS.",
+    "objectivePoints": [
+      "Present Praxis Forge’s brand and services with professional UI/UX.",
+      "Ensure visibility through SEO-friendly routing and metadata.",
+      "Support both light and dark themes dynamically across all components.",
+      "Deliver smooth animations and scroll-based interactions."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Dynamic Routing",
+      "SEO Optimization",
+      "Hostinger"
+    ],
+    "challenges": [
+      "Creating a consistent visual experience across dark and light themes.",
+      "Implementing scroll-based motion effects without compromising performance.",
+      "Structuring the routing architecture for scalable SEO and content delivery.",
+      "Maintaining a clean component structure while supporting rich UI elements."
+    ],
+    "issuesSolved": [
+      "Added theme context and local storage support for persistent light/dark mode.",
+      "Utilized Framer Motion with optimized motion paths and lazy-loading to keep performance high.",
+      "Applied semantic HTML and Next.js head metadata for better SEO crawling.",
+      "Refactored animation-heavy pages using `use client` and dynamic imports where necessary."
+    ],
+    "learnings": [
+      "Implemented a scalable dark/light theming system using Tailwind and React context.",
+      "Improved Next.js SEO strategies including dynamic routing and meta tag configuration.",
+      "Learned how to structure scroll animation in a performance-conscious way.",
+      "Applied clean architecture and reusable components for long-term maintainability."
+    ],
+    "slug": "praxis-forge",
+    "title": "Praxis Forge",
+    "category": "brand / web",
+    "tone": "praxis",
+    "image": "/projects/reels/praxis.webp",
+    "subtitle": "Built with purpose.",
+    "platform": "Web",
+    "kind": "type",
+    "group": "products",
+    "video": "/projects/reels/praxis.mp4"
+  },
+  {
+    "companyName": "Saharsh Cabins",
+    "companyLogo": "https://www.saharsh.co/assets/logo/logo.svg",
+    "projectName": "Lead Automation — Sheets & Gmail",
+    "description": "Built a serverless lead automation system embedded in the Saharsh Cabins contact form. On every submission, a Next.js API route appends a new row to a Google Sheet (acting as a lightweight CRM) and fires two emails via Nodemailer/Gmail SMTP — a branded confirmation to the user and an instant lead-alert to the sales team. Zero third-party services. Fully self-hosted and cost-free.",
+    "iframeSrc": "https://www.saharsh.co/#contact-us",
+    "fallbackImageSrc": "",
+    "fallbackImageSrcMobile": "",
+    "overview": "A lightweight but production-grade lead automation pipeline built as a Next.js API route for Saharsh Cabins. When a visitor submits the 'Get in Touch' form (name, phone, budget, interest), the system simultaneously: (1) appends a structured row to a Google Sheet used by the sales team as a live CRM, and (2) sends two emails via Gmail SMTP — a personalised confirmation to the user and a real-time lead alert to the admin. No Zapier, no Make, no third-party service — fully self-contained.",
+    "objectivePoints": [
+      "Capture every lead from the website contact form into a structured Google Sheet automatically.",
+      "Instantly notify the Saharsh sales team with full lead details via Gmail.",
+      "Send a personalised confirmation email to the user to build trust and reduce drop-off.",
+      "Keep the solution cost-free and self-contained — no paid automation tools.",
+      "Handle errors gracefully so a failed email never blocks the Google Sheet write."
+    ],
+    "techStack": [
+      "Next.js API Routes",
+      "Google Sheets API",
+      "Google Auth (Service Account)",
+      "Nodemailer",
+      "Gmail SMTP",
+      "TypeScript",
+      "Vercel (Serverless)"
+    ],
+    "challenges": [
+      "Authenticating with the Google Sheets API using a service account JSON key without exposing credentials — managed via environment variables and Vercel's secret injection.",
+      "Running two async operations (Sheets append + two emails) in parallel without one failure blocking the other.",
+      "Designing HTML email templates that render correctly in Gmail, Outlook, and Apple Mail — all with inline CSS.",
+      "Rate-limiting the API route to prevent spam submissions from flooding the sheet and inbox.",
+      "Keeping Vercel serverless function cold-start time low despite loading googleapis and nodemailer."
+    ],
+    "issuesSolved": [
+      "Used Google's service account with a scoped JWT auth client — credentials stored as a base64-encoded environment variable, decoded at runtime. No key file ever committed to git.",
+      "Wrapped Sheets append and email sends in Promise.allSettled() — both run in parallel and a failed email never causes the Sheets write to roll back.",
+      "Built plain-text + HTML multipart email templates with inline styles — tested across Gmail, Outlook, and Apple Mail for consistent rendering.",
+      "Added a server-side honeypot field check and a 1-second debounce on the submit button to block basic spam.",
+      "Lazy-initialised googleapis and nodemailer clients outside the handler function to reuse across warm invocations and cut cold-start overhead."
+    ],
+    "learnings": [
+      "Mastered Google Sheets API v4 — appending rows, authenticating with a service account, and handling quota errors.",
+      "Learned the full Nodemailer SMTP flow — app passwords, transport config, HTML/text multipart emails, and error handling.",
+      "Understood how to safely inject secrets into Vercel serverless functions without ever touching the filesystem.",
+      "Gained experience designing resilient multi-step async pipelines using Promise.allSettled() for graceful partial failures.",
+      "Learned how to build a zero-cost, self-hosted lead pipeline that replaces paid tools like Zapier for simple automation needs."
+    ],
+    "slug": "lead-automation",
+    "title": "Lead Automation",
+    "category": "automation / systems",
+    "tone": "automation",
+    "image": "/projects/lead-automation.jpg",
+    "subtitle": "From a conversation to a connection.",
+    "platform": "Google Workspace",
+    "kind": "workflow",
+    "group": "systems"
+  }
+]

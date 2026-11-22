@@ -1,0 +1,85 @@
+{
+  "eyebrow": "Design × code × curiosity",
+  "title": "A little room to",
+  "accent": "play.",
+  "description": "Tune your eye. Connect a few dots. Make something you’d actually wear. A few small experiments from the things I love making.",
+  "pixelRounds": [
+    {
+      "id": "bandadda",
+      "brand": "Bandadda",
+      "title": "Wear your music.",
+      "description": "Original art. Everyday expression.",
+      "cta": "Find your rhythm",
+      "image": "/creative/music-speaks.webp",
+      "tone": "sand",
+      "target": { "space": 20, "radius": 16, "width": 72 },
+      "initial": { "space": 10, "radius": 28, "width": 48 }
+    },
+    {
+      "id": "wayvia",
+      "brand": "Wayvia",
+      "title": "There’s another way.",
+      "description": "One destination. A few good possibilities.",
+      "cta": "Find a route",
+      "image": "/creative/wayvia-hero.webp",
+      "tone": "lavender",
+      "target": { "space": 28, "radius": 8, "width": 88 },
+      "initial": { "space": 16, "radius": 24, "width": 60 }
+    },
+    {
+      "id": "flowpdf",
+      "brand": "FlowPDF",
+      "title": "Just ask. It’s done.",
+      "description": "A simpler way to work with documents.",
+      "cta": "Make an edit",
+      "image": "",
+      "tone": "blue",
+      "target": { "space": 16, "radius": 24, "width": 64 },
+      "initial": { "space": 30, "radius": 4, "width": 96 }
+    }
+  ],
+  "signal": {
+    "source": "New enquiry",
+    "destination": "A personal reply",
+    "stages": ["Validate", "Sheets", "Gmail"],
+    "tiles": [
+      { "kind": "corner", "rotation": 2, "label": "Validate" },
+      { "kind": "straight", "rotation": 0, "label": "Sheets" },
+      { "kind": "corner", "rotation": 3, "label": "Gmail" },
+      { "kind": "corner", "rotation": 1, "label": "" },
+      { "kind": "corner", "rotation": 0, "label": "" },
+      { "kind": "corner", "rotation": 2, "label": "" },
+      { "kind": "straight", "rotation": 2, "label": "" },
+      { "kind": "corner", "rotation": 1, "label": "" },
+      { "kind": "corner", "rotation": 0, "label": "" }
+    ]
+  },
+  "artworks": [
+    {
+      "id": "music-speaks",
+      "name": "Music speaks",
+      "src": "/creative/music-speaks.webp"
+    },
+    {
+      "id": "need-music",
+      "name": "Music like air",
+      "src": "/creative/need-music.webp"
+    },
+    {
+      "id": "electric-sound",
+      "name": "Electric sound",
+      "src": "/creative/electric-sound.webp"
+    },
+    {
+      "id": "guitar-lines",
+      "name": "Six strings",
+      "src": "/creative/guitar-lines.webp"
+    }
+  ],
+  "teeColors": [
+    { "id": "ink", "name": "Ink", "value": "#292c32" },
+    { "id": "bone", "name": "Bone", "value": "#ece5d8" },
+    { "id": "moss", "name": "Moss", "value": "#526450" },
+    { "id": "lilac", "name": "Lilac", "value": "#a69bb7" }
+  ]
+}

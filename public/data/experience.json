@@ -1,0 +1,125 @@
+{
+  "heading": "Experience",
+  "eyebrow": "Where I’ve been building",
+  "description": "Web, mobile, and the systems behind them.",
+  "entries": [
+    {
+      "id": "twigg",
+      "company": "Twigg",
+      "role": "Full-Stack Developer",
+      "start": "2025-11",
+      "end": null,
+      "logo": {
+        "src": "/experience/twigg.svg",
+        "background": "#16382b"
+      },
+      "icon": "smartphone",
+      "points": [
+        "Shipped Flutter, web, and fintech features.",
+        "Built AI insights from Account Aggregator data.",
+        "Worked across APIs, architecture, and delivery."
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "href": "https://apps.apple.com/in/app/twigg-one/id6758598241",
+          "icon": "apple"
+        },
+        {
+          "label": "Google Play",
+          "href": "https://play.google.com/store/apps/details?id=com.aadyantx.twigg",
+          "icon": "play-store"
+        }
+      ]
+    },
+    {
+      "id": "rimigo",
+      "company": "Rimigo",
+      "role": "Full-Stack Developer",
+      "start": "2025-09",
+      "end": "2026-02",
+      "logo": {
+        "src": "/experience/rimigo.svg",
+        "background": "#ede5ff"
+      },
+      "icon": "globe",
+      "points": [
+        "Built the React travel platform end to end.",
+        "Owned onboarding and AI trip planning.",
+        "Integrated hotel APIs and tailored recommendations."
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "href": "https://rimigo.com/",
+          "icon": "globe"
+        },
+        {
+          "label": "View project",
+          "href": "/work/rimigo",
+          "icon": "layers"
+        }
+      ]
+    },
+    {
+      "id": "skillspe",
+      "company": "SkillsPe",
+      "role": "Intern → Junior Developer",
+      "start": "2024-06",
+      "end": "2025-11",
+      "logo": {
+        "src": "/skillspe.svg",
+        "background": "#eee9ff"
+      },
+      "icon": "layers",
+      "points": [
+        "Shipped Flutter apps on iOS and Android.",
+        "Built the Next.js site and admin console.",
+        "Integrated UPI, authentication, and analytics."
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "href": "https://apps.apple.com/in/app/skillspe/id6572280569",
+          "icon": "apple"
+        },
+        {
+          "label": "Google Play",
+          "href": "https://play.google.com/store/apps/details?id=com.application.skillspe&hl=en",
+          "icon": "play-store"
+        }
+      ]
+    },
+    {
+      "id": "ridvig",
+      "company": "Ridvig Technologies",
+      "role": "Full-Stack Developer Intern",
+      "start": "2024-11",
+      "end": "2025-06",
+      "logo": {
+        "src": "/ridvig.png",
+        "background": "#f4f3ef"
+      },
+      "icon": "code",
+      "points": [
+        "Built a Flutter ride-booking app end to end.",
+        "Added live tracking and ride matching.",
+        "Connected booking flows to Django REST APIs."
+      ],
+      "links": []
+    },
+    {
+      "id": "business-solutions",
+      "company": "Business Solutions",
+      "role": "Web Developer Intern",
+      "start": "2023-10",
+      "end": "2023-12",
+      "icon": "code",
+      "points": [
+        "Built responsive websites for clients.",
+        "Owned requirements, development, and delivery."
+      ],
+      "links": []
+    }
+  ]
+}

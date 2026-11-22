@@ -1,0 +1,66 @@
+{
+  "slug": "bandadda",
+  "url": "https://www.bandadda.com/",
+  "status": 200,
+  "file": "/projects/reels/bandadda.mp4",
+  "seconds": 26.418,
+  "actions": [
+    {
+      "at": 6.083,
+      "type": "click",
+      "target": {
+        "linkText": "EXPLORE MUSIC LOVER COLLECTION"
+      }
+    },
+    {
+      "at": 13.212,
+      "type": "scroll",
+      "top": 600
+    },
+    {
+      "at": 17.327,
+      "type": "scroll",
+      "top": 0
+    },
+    {
+      "at": 23.785,
+      "type": "navigate",
+      "url": "https://www.bandadda.com/customize-now"
+    }
+  ],
+  "cues": [
+    {
+      "at": 5.683,
+      "x": 430,
+      "y": 523.796875,
+      "scale": 1.17
+    },
+    {
+      "at": 12.012,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/bandadda.webp",
+  "duration": 26,
+  "speed": 1.02,
+  "camera": [
+    {
+      "start": 5.593,
+      "end": 9.793,
+      "x": 0.2986111111111111,
+      "y": 0.5819965277777778,
+      "scale": 1.17
+    },
+    {
+      "start": 11.822,
+      "end": 16.022,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

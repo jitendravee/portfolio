@@ -1,0 +1,64 @@
+{
+  "slug": "praxis",
+  "url": "https://www.praxisforge.com/",
+  "status": 403,
+  "file": "/projects/reels/praxis.mp4",
+  "seconds": 20.908,
+  "actions": [
+    {
+      "at": 7.207,
+      "type": "scroll",
+      "top": 800
+    },
+    {
+      "at": 10.973,
+      "type": "scroll",
+      "top": 1600
+    },
+    {
+      "at": 15.088,
+      "type": "scroll",
+      "top": 2600
+    },
+    {
+      "at": 18.527,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 6.007,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    },
+    {
+      "at": 9.773000000000001,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/praxis.webp",
+  "duration": 20.91,
+  "speed": 1.0,
+  "camera": [
+    {
+      "start": 6.007,
+      "end": 10.207,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    },
+    {
+      "start": 11.007,
+      "end": 15.207,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

@@ -1,38 +1,19 @@
-import { Suspense } from "react";
-import About from "@/components/About";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
-import WorkSection from "@/components/WorkSection";
-import TextBuilder from "@/reusable/TextBuilder";
-import GetInTouch from "@/components/GetInTouch";
-
+import ProjectBook from "@/components/portfolio/ProjectBook";
+import ProjectGrid from "@/components/portfolio/ProjectGrid";
+import LegacyProjectLink from "@/components/portfolio/LegacyProjectLink";
+import ExperienceTimeline from "@/components/portfolio/ExperienceTimeline";
 export default function Home() {
   return (
-    <div className="w-full max-w-[1124px] p-4 px-8 mx-auto">
-      <div className="w-full relative">
-        <Navbar />
-        <a
-          href="/Jitendra_Choudhary_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute z-20 right-0 w-[48px] h-[48px] bg-[var(--accent-opacity)] flex items-center justify-center rounded-full animate-[spin_15s_linear_infinite] hover:animate-none hover:scale-125 transition-all offset_ring cursor-pointer"
-          title="Download CV"
-        >
-          <TextBuilder text="CV" className="text-[16px]" />
-        </a>
-
-        <div className="pt-12 md:pt-20 flex flex-col gap-8">
-          <HeroSection />
-          <About />
-          <Suspense fallback={<div>Loading work section...</div>}>
-            <WorkSection />
-          </Suspense>
-          <GetInTouch />
-
-          <Footer />
-        </div>
+    <>
+      <LegacyProjectLink />
+      <ProjectBook />
+      <section id="projects" className="projects-section">
+        <h2 className="section-label">Selected work</h2>
+        <ProjectGrid />
+      </section>
+      <div className="home-experience">
+        <ExperienceTimeline />
       </div>
-    </div>
+    </>
   );
 }

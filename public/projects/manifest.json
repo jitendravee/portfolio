@@ -1,0 +1,107 @@
+{
+  "reference": "https://matthewyu.dev/",
+  "recordingStatus": "Actual public-site walkthroughs with a lavender pointer, trailing halo, click feedback, smooth navigation, and eased camera zooms. Native and private tools retain supplied media.",
+  "assets": [
+    {
+      "file": "skillspe-app.mp4",
+      "source": "../playstore.gif",
+      "type": "original product preview converted from the existing repository GIF; not a newly recorded walkthrough"
+    },
+    {
+      "file": "skillspe-poster.webp",
+      "source": "../playstore.gif",
+      "type": "first-frame poster"
+    },
+    {
+      "file": "twigg-1.webp",
+      "source": "https://twigg.one/hero/mobile_1.png",
+      "type": "official product image"
+    },
+    {
+      "file": "twigg-2.webp",
+      "source": "https://twigg.one/hero/mobile_2.png",
+      "type": "official product image"
+    },
+    {
+      "file": "twigg-3.webp",
+      "source": "https://twigg.one/hero/mobile_5.png",
+      "type": "official product image"
+    },
+    {
+      "file": "saharsh.webp",
+      "source": "https://saharsh.co/assets/sized/cabin/cabin_1-1855.webp",
+      "type": "official project photography"
+    },
+    {
+      "file": "rimigo.webp",
+      "source": "https://media.rimigo.com/compressed/1782723548633_world_image.webp",
+      "type": "official product artwork, not a website screenshot"
+    }
+  ],
+  "linkNotes": {
+    "praxis-forge": "Verified rendered PraxisForge branding in the live browser. Raw HTML contains stale Ryuzentech metadata."
+  },
+  "recordings": [
+    {
+      "slug": "rimigo",
+      "details": "reels/rimigo.json",
+      "video": "reels/rimigo.mp4",
+      "poster": "reels/rimigo.webp"
+    },
+    {
+      "slug": "twigg",
+      "details": "reels/twigg.json",
+      "video": "reels/twigg.mp4",
+      "poster": "reels/twigg.webp"
+    },
+    {
+      "slug": "saharsh",
+      "details": "reels/saharsh.json",
+      "video": "reels/saharsh.mp4",
+      "poster": "reels/saharsh.webp"
+    },
+    {
+      "slug": "skillspe",
+      "details": "reels/skillspe.json",
+      "video": "reels/skillspe.mp4",
+      "poster": "reels/skillspe.webp"
+    },
+    {
+      "slug": "service-hive",
+      "details": "reels/service-hive.json",
+      "video": "reels/service-hive.mp4",
+      "poster": "reels/service-hive.webp"
+    },
+    {
+      "slug": "praxis",
+      "details": "reels/praxis.json",
+      "video": "reels/praxis.mp4",
+      "poster": "reels/praxis.webp"
+    },
+    {
+      "slug": "flowpdf",
+      "details": "reels/flowpdf.json",
+      "video": "reels/flowpdf.mp4",
+      "poster": "reels/flowpdf.webp"
+    },
+    {
+      "slug": "bandadda",
+      "details": "reels/bandadda.json",
+      "video": "reels/bandadda.mp4",
+      "poster": "reels/bandadda.webp"
+    },
+    {
+      "slug": "wayvia",
+      "details": "reels/wayvia.json",
+      "video": "reels/wayvia.mp4",
+      "poster": "reels/wayvia.webp"
+    },
+    {
+      "slug": "bandadda-community",
+      "details": "reels/bandadda-community.json",
+      "video": "reels/bandadda-community.mp4",
+      "poster": "reels/bandadda-community.webp"
+    }
+  ],
+  "creativeSources": "../creative/sources.json"
+}

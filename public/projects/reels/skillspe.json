@@ -1,0 +1,68 @@
+{
+  "slug": "skillspe",
+  "url": "https://www.skillspe.com/",
+  "status": 200,
+  "file": "/projects/reels/skillspe.mp4",
+  "seconds": 25.962,
+  "actions": [
+    {
+      "at": 7.945,
+      "type": "click",
+      "target": {
+        "href": "#how-it-works"
+      }
+    },
+    {
+      "at": 13.761,
+      "type": "scroll",
+      "top": 1345
+    },
+    {
+      "at": 17.235,
+      "type": "click",
+      "target": {
+        "href": "#features"
+      }
+    },
+    {
+      "at": 23.097,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 7.545,
+      "x": 719.6875,
+      "y": 300,
+      "scale": 1.17
+    },
+    {
+      "at": 12.567,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/skillspe.webp",
+  "duration": 25.96,
+  "speed": 1.0,
+  "camera": [
+    {
+      "start": 7.545,
+      "end": 11.745,
+      "x": 0.4997829861111111,
+      "y": 0.3333333333333333,
+      "scale": 1.17
+    },
+    {
+      "start": 12.567,
+      "end": 16.767,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

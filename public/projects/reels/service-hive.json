@@ -1,0 +1,67 @@
+{
+  "slug": "service-hive",
+  "url": "https://www.servicehive.tech/",
+  "status": 403,
+  "file": "/projects/reels/service-hive.mp4",
+  "seconds": 65.447,
+  "actions": [
+    {
+      "at": 34.902,
+      "type": "click",
+      "target": {
+        "click": "button",
+        "name": "View Products"
+      }
+    },
+    {
+      "at": 42.295,
+      "type": "scroll",
+      "top": 1700
+    },
+    {
+      "at": 50.888,
+      "type": "scroll",
+      "top": 2800
+    },
+    {
+      "at": 62.34,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 32.018,
+      "x": 647.5,
+      "y": 479.5,
+      "scale": 1.17
+    },
+    {
+      "at": 40.444,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/service-hive.webp",
+  "duration": 26,
+  "speed": 2.52,
+  "camera": [
+    {
+      "start": 12.72,
+      "end": 16.92,
+      "x": 0.4496527777777778,
+      "y": 0.5327777777777778,
+      "scale": 1.17
+    },
+    {
+      "start": 17.72,
+      "end": 21.92,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

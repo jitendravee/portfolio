@@ -1,0 +1,68 @@
+{
+  "slug": "twigg",
+  "url": "https://twigg.one/",
+  "status": 200,
+  "file": "/projects/reels/twigg.mp4",
+  "seconds": 26.27,
+  "actions": [
+    {
+      "at": 5.54,
+      "type": "click",
+      "target": {
+        "href": "#features"
+      }
+    },
+    {
+      "at": 11.905,
+      "type": "scroll",
+      "top": 2557
+    },
+    {
+      "at": 15.448,
+      "type": "click",
+      "target": {
+        "href": "#how-it-works"
+      }
+    },
+    {
+      "at": 23.37,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 5.14,
+      "x": 829.5078125,
+      "y": 300,
+      "scale": 1.17
+    },
+    {
+      "at": 10.705,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/twigg.webp",
+  "duration": 26,
+  "speed": 1.01,
+  "camera": [
+    {
+      "start": 5.087,
+      "end": 9.287,
+      "x": 0.5760470920138889,
+      "y": 0.3333333333333333,
+      "scale": 1.17
+    },
+    {
+      "start": 10.595,
+      "end": 14.795,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

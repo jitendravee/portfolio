@@ -1,0 +1,66 @@
+{
+  "slug": "wayvia",
+  "url": "https://wayvia.xyz/",
+  "status": 200,
+  "file": "/projects/reels/wayvia.mp4",
+  "seconds": 20.906,
+  "actions": [
+    {
+      "at": 5.841,
+      "type": "scroll",
+      "top": 600
+    },
+    {
+      "at": 8.614,
+      "type": "click",
+      "target": {
+        "href": "/journey-planner"
+      }
+    },
+    {
+      "at": 14.001,
+      "type": "scroll",
+      "top": 400
+    },
+    {
+      "at": 18.438,
+      "type": "navigate",
+      "url": "https://wayvia.xyz/refund-calculator"
+    }
+  ],
+  "cues": [
+    {
+      "at": 4.641,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    },
+    {
+      "at": 8.214,
+      "x": 430,
+      "y": 600,
+      "scale": 1.17
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/wayvia.webp",
+  "duration": 20.91,
+  "speed": 1.0,
+  "camera": [
+    {
+      "start": 4.641,
+      "end": 8.841,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    },
+    {
+      "start": 9.641,
+      "end": 13.841,
+      "x": 0.2986111111111111,
+      "y": 0.6666666666666666,
+      "scale": 1.17
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

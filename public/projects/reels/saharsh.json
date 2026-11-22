@@ -1,0 +1,66 @@
+{
+  "slug": "saharsh",
+  "url": "https://saharsh.co/",
+  "status": 200,
+  "file": "/projects/reels/saharsh.mp4",
+  "seconds": 22.636,
+  "actions": [
+    {
+      "at": 6.704,
+      "type": "scroll",
+      "top": 850
+    },
+    {
+      "at": 10.651,
+      "type": "click",
+      "target": {
+        "href": "/ourprojects/lakeside-cabin/"
+      }
+    },
+    {
+      "at": 16.37,
+      "type": "scroll",
+      "top": 600
+    },
+    {
+      "at": 19.957,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 5.504,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    },
+    {
+      "at": 10.251,
+      "x": 430,
+      "y": 600,
+      "scale": 1.17
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/saharsh.webp",
+  "duration": 22.64,
+  "speed": 1.0,
+  "camera": [
+    {
+      "start": 5.504,
+      "end": 9.704,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    },
+    {
+      "start": 10.504,
+      "end": 14.704,
+      "x": 0.2986111111111111,
+      "y": 0.6666666666666666,
+      "scale": 1.17
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

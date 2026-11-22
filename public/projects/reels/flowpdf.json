@@ -1,0 +1,76 @@
+{
+  "slug": "flowpdf",
+  "url": "https://flowpdf.online/",
+  "status": 200,
+  "file": "/projects/reels/flowpdf.mp4",
+  "seconds": 59.973,
+  "actions": [
+    {
+      "at": 19.308,
+      "type": "click",
+      "target": {
+        "href": "/#tools"
+      }
+    },
+    {
+      "at": 28.057,
+      "type": "scroll",
+      "top": 1694
+    },
+    {
+      "at": 39.633,
+      "type": "click",
+      "target": {
+        "href": "/#faq"
+      }
+    },
+    {
+      "at": 49.898,
+      "type": "click",
+      "target": {
+        "click": "button",
+        "name": "What can I actually ask FlowPDF to do?"
+      }
+    },
+    {
+      "at": 56.857,
+      "type": "scroll",
+      "top": 0
+    }
+  ],
+  "cues": [
+    {
+      "at": 16.536,
+      "x": 1230.6640625,
+      "y": 41.3125,
+      "scale": 1.17
+    },
+    {
+      "at": 26.461000000000002,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/flowpdf.webp",
+  "duration": 26,
+  "speed": 2.31,
+  "camera": [
+    {
+      "start": 7.169,
+      "end": 11.369,
+      "x": 0.8546278211805556,
+      "y": 0.04590277777777778,
+      "scale": 1.17
+    },
+    {
+      "start": 12.169,
+      "end": 16.369,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}

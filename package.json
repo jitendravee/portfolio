@@ -5,11 +5,19 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node scripts/preview.cjs",
+    "lint": "eslint src scripts",
+    "preview": "node scripts/preview.cjs",
+    "test:ui": "node scripts/verify-ui.cjs",
+    "record:project": "node scripts/record-project.cjs",
+    "test:experience": "node scripts/verify-experience.cjs",
+    "test:creative": "node scripts/verify-creative.cjs",
+    "test:book": "node scripts/verify-book-motion.cjs",
+    "test:book:pixels": "python3 scripts/verify-book-pixels.py",
+    "test:play": "node scripts/verify-play.cjs",
+    "test:mobile": "node scripts/verify-mobile.cjs"
   },
   "dependencies": {
-    "lottie-react": "^2.4.1",
     "next": "15.4.4",
     "next-themes": "^0.4.6",
     "postcss": "^8.5.6",
@@ -25,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.4",
+    "playwright": "^1.65.1",
     "tailwindcss": "^4.1.11",
     "typescript": "^5"
   }

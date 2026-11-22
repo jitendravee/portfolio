@@ -1,0 +1,196 @@
+{
+  "kicker": "DESIGNER / ENGINEER / BUILDER",
+  "name": "Jitendra",
+  "spreads": [
+    {
+      "id": "bandadda",
+      "label": "Bandadda / from a pencil line to a product",
+      "left": {
+        "layout": "sketch",
+        "illustration": "artwork",
+        "eyebrow": "Graphic design / Bandadda",
+        "title": "An idea, a few lines.",
+        "note": "Original graphics, drawn to be worn.",
+        "images": [
+          {
+            "src": "/creative/music-speaks.webp",
+            "alt": "Music Speaks graphic"
+          },
+          {
+            "src": "/creative/tiger.webp",
+            "alt": "Tiger illustration"
+          },
+          {
+            "src": "/creative/guitar-lines.webp",
+            "alt": "Six strings line artwork"
+          }
+        ],
+        "tags": [
+          "Illustration",
+          "Typography"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "storefront",
+        "eyebrow": "Design + engineering / Bandadda",
+        "title": "Build the world around it.",
+        "note": "The art, the store, the studio. I own the whole journey.",
+        "images": [],
+        "tags": [
+          "Brand",
+          "Product",
+          "Ownership"
+        ]
+      }
+    },
+    {
+      "id": "rimigo",
+      "label": "Rimigo / thoughtful experiences, thoughtful engineering",
+      "left": {
+        "layout": "sketch",
+        "illustration": "travel",
+        "eyebrow": "Product thinking / Rimigo",
+        "title": "Make room for discovery.",
+        "note": "Travel planning, shaped around real people.",
+        "images": [],
+        "tags": [
+          "Travel",
+          "Collaboration"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "architecture",
+        "eyebrow": "Software engineering / Rimigo",
+        "title": "Good ideas need good code.",
+        "note": "Routes, data, and AI, connected with care.",
+        "images": [],
+        "tags": [
+          "React",
+          "TanStack",
+          "Agentic AI"
+        ]
+      }
+    },
+    {
+      "id": "twigg",
+      "label": "Twigg / small details, a clearer financial picture",
+      "left": {
+        "layout": "sketch",
+        "illustration": "mobile",
+        "eyebrow": "Interaction design / Twigg",
+        "title": "Make the complex feel simple.",
+        "note": "Financial clarity, one useful detail at a time.",
+        "images": [],
+        "tags": [
+          "Flutter",
+          "Bloc",
+          "Fintech"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "website",
+        "eyebrow": "Across platforms / Twigg",
+        "title": "Carry that care everywhere.",
+        "note": "The same product thinking, from mobile to web.",
+        "images": [],
+        "tags": [
+          "Next.js",
+          "Performance",
+          "Trust"
+        ]
+      }
+    },
+    {
+      "id": "product-thinking",
+      "label": "Wayvia & FlowPDF / noticing a problem, making a product",
+      "left": {
+        "layout": "sketch",
+        "illustration": "journey",
+        "eyebrow": "My own products / Wayvia",
+        "title": "Find another way.",
+        "note": "Connecting journeys when the direct route falls short.",
+        "images": [],
+        "tags": [
+          "Idea",
+          "Design",
+          "Build"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "documents",
+        "eyebrow": "My own products / FlowPDF",
+        "title": "Ask. Edit. Done.",
+        "note": "Natural language, useful software, simpler documents.",
+        "images": [],
+        "tags": [
+          "Product design",
+          "AI",
+          "TypeScript"
+        ]
+      }
+    },
+    {
+      "id": "automation",
+      "label": "Systems / make the everyday work better",
+      "left": {
+        "layout": "sketch",
+        "illustration": "automation",
+        "eyebrow": "Automation / the useful little things",
+        "title": "Let the little things run.",
+        "note": "From a new enquiry to a useful follow-up.",
+        "images": [],
+        "tags": [
+          "Next.js API",
+          "Sheets",
+          "Gmail"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "dashboard",
+        "eyebrow": "Operations / SkillsPe",
+        "title": "Give the team a clearer view.",
+        "note": "Tools for the people making things happen.",
+        "images": [],
+        "tags": [
+          "React",
+          "Redux Toolkit",
+          "Analytics"
+        ]
+      }
+    },
+    {
+      "id": "community",
+      "label": "Beyond the screen / people, music, and stories",
+      "left": {
+        "layout": "sketch",
+        "illustration": "community",
+        "eyebrow": "Community / Bandadda",
+        "title": "Bring people together.",
+        "note": "Music, live gigs, jamrooms, and shared experiences.",
+        "images": [],
+        "tags": [
+          "Culture",
+          "Experiences"
+        ]
+      },
+      "right": {
+        "layout": "sketch",
+        "illustration": "stories",
+        "eyebrow": "Content + curiosity / always making",
+        "title": "Always more to make.",
+        "note": "I design, build, take ownership, and tell the story.",
+        "images": [],
+        "tags": [
+          "Content",
+          "Craft",
+          "Curiosity"
+        ]
+      }
+    }
+  ]
+}

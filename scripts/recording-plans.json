@@ -1,0 +1,12 @@
+{
+  "rimigo": {"url":"https://rimigo.com/","steps":[{"click":"button","name":"Destination"},{"escape":true},{"scroll":780},{"scroll":1600},{"scroll":0}]},
+  "twigg": {"url":"https://twigg.one/","steps":[{"href":"#features"},{"scrollBy":650},{"href":"#how-it-works"},{"scroll":0}]},
+  "saharsh": {"url":"https://saharsh.co/","steps":[{"scroll":850},{"href":"/ourprojects/lakeside-cabin/"},{"scroll":600},{"scroll":0}]},
+  "skillspe": {"url":"https://www.skillspe.com/","steps":[{"href":"#how-it-works"},{"scrollBy":500},{"href":"#features"},{"scroll":0}]},
+  "service-hive": {"url":"https://www.servicehive.tech/","steps":[{"click":"button","name":"View Products"},{"scroll":1700},{"scroll":2800},{"scroll":0}]},
+  "praxis": {"url":"https://www.praxisforge.com/","steps":[{"scroll":800},{"scroll":1600},{"scroll":2600},{"scroll":0}]},
+  "flowpdf": {"url":"https://flowpdf.online/","steps":[{"href":"/#tools"},{"scrollBy":550},{"href":"/#faq"},{"click":"button","name":"What can I actually ask FlowPDF to do?"},{"scroll":0}]},
+  "bandadda": {"url":"https://www.bandadda.com/","steps":[{"linkText":"EXPLORE MUSIC LOVER COLLECTION"},{"scroll":600},{"scroll":0},{"navigate":"https://www.bandadda.com/customize-now"}]},
+  "wayvia": {"url":"https://wayvia.xyz/","steps":[{"scroll":600},{"href":"/journey-planner"},{"scroll":400},{"navigate":"https://wayvia.xyz/refund-calculator"}]},
+  "bandadda-community": {"url":"https://www.bandadda.com/events","steps":[{"scroll":500},{"scroll":0},{"navigate":"https://www.bandadda.com/jamroom-studio"},{"scroll":500}]}
+}

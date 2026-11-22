@@ -1,0 +1,64 @@
+{
+  "slug": "bandadda-community",
+  "url": "https://www.bandadda.com/events",
+  "status": 200,
+  "file": "/projects/reels/bandadda-community.mp4",
+  "seconds": 44.171,
+  "actions": [
+    {
+      "at": 15.297,
+      "type": "scroll",
+      "top": 500
+    },
+    {
+      "at": 22.487,
+      "type": "scroll",
+      "top": 0
+    },
+    {
+      "at": 33.663,
+      "type": "navigate",
+      "url": "https://www.bandadda.com/jamroom-studio"
+    },
+    {
+      "at": 41.063,
+      "type": "scroll",
+      "top": 500
+    }
+  ],
+  "cues": [
+    {
+      "at": 13.651,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    },
+    {
+      "at": 20.889000000000003,
+      "x": 760,
+      "y": 480,
+      "scale": 1.14
+    }
+  ],
+  "cursor": "spring-smoothed lavender pointer, glass label, trailing halo and click feedback",
+  "poster": "/projects/reels/bandadda-community.webp",
+  "duration": 26,
+  "speed": 1.7,
+  "camera": [
+    {
+      "start": 8.035,
+      "end": 12.235,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    },
+    {
+      "start": 13.035,
+      "end": 17.235,
+      "x": 0.5277777777777778,
+      "y": 0.5333333333333333,
+      "scale": 1.14
+    }
+  ],
+  "type": "Real public-site walkthrough with spring-smoothed cursor and eased camera zooms"
+}
